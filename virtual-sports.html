@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+<!--  <meta name="theme-color" content="" />-->
+
+  <link rel="icon" type="image/png" href="img/icon/logo.png" />
+
+  <title>FUN88 Sportsbook &amp; Casino</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- JQuery 3.4.1 -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+<!--  <script src="https://kit.fontawesome.com/df3fec80dc.js"></script>-->
+  <script type="text/javascript" src="js/config.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content y-scroll sb-0">
+      <header>
+        <script src="js/component/header.js"></script>
+        <script src="js/component/sidenav.js"></script>
+      </header>
+
+      <section>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb" style="border-radius: 0px; margin-bottom: 0">
+            <li class="breadcrumb-item f-1"><a href="#">Home</a></li>
+            <li class="breadcrumb-item f-1 active" aria-current="page">Instants</li>
+          </ol>
+        </nav>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="mt-3 mb-3">
+                <div class="grid-container" id="list">
+                  <div class="d-flex justify-content-center">
+                    <div class="spinner-border" role="status">
+                      <span class="sr-only">Loading...</span>
+                    </div>
+                  </div>
+
+                  <script type="text/javascript">
+                    var items = []
+
+                    for (var i = 0; i < 6; i++) {
+                      var box = `
+                          <div class="box">
+                            <a href="#" restricted>
+                              <img class="w-100" src="img/virtualsports/img${i+1}.jpg" alt="">
+                            </a>
+                          </div>
+                          `
+                      items.push(box)
+                    }
+
+                    $('spinner-border').parent('div').hide()
+                    $('#list.grid-container').css('display', 'grid')
+                    $('#list.grid-container').html(items)
+                    $('.breadcrumb-item.active').append(` (${items.length})`)
+                  </script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="control">
+      <script src="js/component/user-control.js"></script>
+    </div>
+  </div>
+
+  <script src="js/functions.js"></script>
+<!--  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>-->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

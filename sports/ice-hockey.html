@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+  <!--  <meta name="theme-color" content="" />-->
+
+  <link rel="icon" type="image/png" href="../img/icon/logo.png" />
+
+  <title>FUN88 Sportsbook &amp; Casino</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- JQuery 3.4.1 -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+  <!--  <script src="https://kit.fontawesome.com/df3fec80dc.js"></script>-->
+  <script type="text/javascript" src="../js/config.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content y-scroll sb-0">
+      <header>
+        <script src="../js/component/header.js"></script>
+        <script src="../js/component/sidenav.js"></script>
+      </header>
+
+      <section>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb" style="border-radius: 0px; margin-bottom: 0">
+            <li class="breadcrumb-item f-1"><a href="../#">Home</a></li>
+            <li class="breadcrumb-item f-1">Sports</li>
+            <li class="breadcrumb-item f-1 active" aria-current="page">Ice Hockey</li>
+          </ol>
+        </nav>
+        <div class="container">
+          <div class="row">
+            <nav class="nav bg-white border-bottom x-scroll sb-1 no-wrap w-100" role="tablist">
+              <a class="text-dark underline d-inline-block p-2 pl-3 pr-3 f-1 active" data-toggle="tab" href="#l1t01" role="tab">Daily Match List</a>
+              <a class="text-dark underline d-inline-block p-2 pl-3 pr-3 f-1" data-toggle="tab" href="#l1t02" role="tab">Top Leagues</a>
+              <a class="text-dark underline d-inline-block p-2 pl-3 pr-3 f-1" data-toggle="tab" href="#l1t03" role="tab">All Leagues</a>
+              <a class="text-dark underline d-inline-block p-2 pl-3 pr-3 f-1" data-toggle="tab" href="#l1t04" role="tab">In-Play</a>
+            </nav>
+
+            <div class="tab-content w-100">
+              <div class="tab-pane fade f-1 show active" id="l1t01" role="tabpanel">
+                <nav class="nav x-scroll scroll-snap-align-center sb-1 no-wrap w-100" role="tablist">
+                  <a class="underline d-inline-block p-1 f-1 active" data-toggle="tab" href="#l2t01" role="tab">
+                    <p class="text-secondary text-uppercase m-0 f-3" role="wday">WEEKDAY</p>
+                    <p class="text-primary font-weight-bold m-0 f-4" role="date">DATE</p>
+                  </a>
+                </nav>
+
+                <script type="text/javascript">
+                  const tabs = $('[role="tabpanel"] > .nav[role="tablist"] > [role="tab"]')
+
+                  const _date = new Date().getTime()
+                  const dateTimeFormat = new Intl.DateTimeFormat('en', {weekday: 'long', month: 'long', day: '2-digit'})
+                  
+                  tabs.map((i, e) => {
+                    var date = new Date(_date + (i * 24 * 60 * 60 * 10 * 100))
+                    var [{value: weekday},, {value: month},, {value: day}] = dateTimeFormat.formatToParts(date)
+
+                    weekday = (i === 0 ? 'today' : (i === 1 ? 'tomorrow' : weekday))
+                    date    = `${month} ${day}`
+
+                    $(e).children('[role="wday"]').html(weekday)
+                    $(e).children('[role="date"]').html(date)
+                  })
+                </script>
+
+                <div class="tab-content w-100">
+                  <div class="tab-pane fade f-1 show active" id="l2t01" role="tabpanel">
+                    <div class="accordion accord-1">
+                      <div class="card">
+                        <div class="btn text-left card-header f-1" id="a1h1" data-toggle="collapse" data-target="#a1c1" aria-expanded="true" aria-controls="a1c1">
+                          Russia Short Hockey [3x10 min, Excluding OT]
+                          <span class="badge badge-primary badge-pill">2</span>
+                        </div>
+                        <div id="a1c1" class="collapse show f-2" aria-labelledby="a1h1">
+                          <div class="card-body">
+                            <div class="item">
+                              <div class="row pb-1 pl-2 pr-2">
+                                <p class="w-100 m-0">
+                                  Ershistyye Tigry<br>Stalker
+                                </p>
+                                <p class="text-right text-muted w-100 m-0 f-3">
+                                  02/06 00:00
+                                </p>
+                              </div>
+                              <div class="row pb-1 c-table">
+                                <div class="col text-center pl-1 pr-1">
+                                  <p class="text-muted f-4">Spread</p>
+                                </div>
+                                <div class="col text-center pl-1 pr-1">
+                                  <p class="text-muted f-4">Winner</p>
+                                  <p class="text-right">
+                                    <span class="float-left">1</span>
+                                    <span class="font-weight-bold">2.40</span>
+                                  </p>
+                                  <p class="text-right">
+                                    <span class="float-left">2</span>
+                                    <span class="font-weight-bold">2.00</span>
+                                  </p>
+                                  <p class="text-right">
+                                    <span class="float-left">X</span>
+                                    <span class="font-weight-bold">5.15</span>
+                                  </p>
+                                </div>
+                                <div class="col text-center pl-1 pr-1">
+                                  <p class="text-muted f-4">Over/Under</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="item">
+                              <div class="row pb-1 pl-2 pr-2">
+                                <p class="w-100 m-0">
+                                  Krasniye Krilya<br>Ledoviy Desant
+                                </p>
+                                <p class="text-right text-muted w-100 m-0 f-3">
+                                  02/06 00:00
+                                </p>
+                              </div>
+                              <div class="row pb-1 c-table">
+                                <div class="col text-center pl-1 pr-1">
+                                  <p class="text-muted f-4">Spread</p>
+                                </div>
+                                <div class="col text-center pl-1 pr-1">
+                                  <p class="text-muted f-4">Winner</p>
+                                  <p class="text-right">
+                                    <span class="float-left">1</span>
+                                    <span class="font-weight-bold">2.40</span>
+                                  </p>
+                                  <p class="text-right">
+                                    <span class="float-left">2</span>
+                                    <span class="font-weight-bold">2.00</span>
+                                  </p>
+                                  <p class="text-right">
+                                    <span class="float-left">X</span>
+                                    <span class="font-weight-bold">5.15</span>
+                                  </p>
+                                </div>
+                                <div class="col text-center pl-1 pr-1">
+                                  <p class="text-muted f-4">Over/Under</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="btn text-left card-header f-1" id="a1h2" data-toggle="collapse" data-target="#a1c2" aria-expanded="true" aria-controls="a1c2">
+                          Ice Cup Ease [3x10, Excluding OT]
+                          <span class="badge badge-primary badge-pill">6</span>
+                        </div>
+                        <div id="a1c2" class="collapse show f-2" aria-labelledby="a1h2">
+                          <div class="card-body">
+                            <div class="item">
+                              <div class="row pb-1 pl-2 pr-2">
+                                <p class="w-100 m-0">
+                                  akbars<br>Metallurg
+                                </p>
+                                <p class="text-right text-muted w-100 m-0 f-3">
+                                  02/06 00:00
+                                </p>
+                              </div>
+                              <div class="row pb-1 c-table">
+                                <div class="col text-center pl-1 pr-1">
+                                  <p class="text-muted f-4">Spread</p>
+                                </div>
+                                <div class="col text-center pl-1 pr-1">
+                                  <p class="text-muted f-4">Winner</p>
+                                  <p class="text-right">
+                                    <span class="float-left">1</span>
+                                    <span class="font-weight-bold">2.40</span>
+                                  </p>
+                                  <p class="text-right">
+                                    <span class="float-left">2</span>
+                                    <span class="font-weight-bold">2.00</span>
+                                  </p>
+                                  <p class="text-right">
+                                    <span class="float-left">X</span>
+                                    <span class="font-weight-bold">5.15</span>
+                                  </p>
+                                </div>
+                                <div class="col text-center pl-1 pr-1">
+                                  <p class="text-muted f-4">Over/Under</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="item">
+                              <div class="row pb-1 pl-2 pr-2">
+                                <p class="w-100 m-0">
+                                  Metallurg<br>akbars
+                                </p>
+                                <p class="text-right text-muted w-100 m-0 f-3">
+                                  02/06 00:00
+                                </p>
+                              </div>
+                              <div class="row pb-1 c-table">
+                                <div class="col text-center pl-1 pr-1">
+                                  <p class="text-muted f-4">Spread</p>
+                                </div>
+                                <div class="col text-center pl-1 pr-1">
+                                  <p class="text-muted f-4">Winner</p>
+                                  <p class="text-right">
+                                    <span class="float-left">1</span>
+                                    <span class="font-weight-bold">2.40</span>
+                                  </p>
+                                  <p class="text-right">
+                                    <span class="float-left">2</span>
+                                    <span class="font-weight-bold">2.00</span>
+                                  </p>
+                                  <p class="text-right">
+                                    <span class="float-left">X</span>
+                                    <span class="font-weight-bold">5.15</span>
+                                  </p>
+                                </div>
+                                <div class="col text-center pl-1 pr-1">
+                                  <p class="text-muted f-4">Over/Under</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="item">
+                              <div class="row pb-1 pl-2 pr-2">
+                                <p class="w-100 m-0">
+                                  Amur Khabarovsk<br>Metallurg
+                                </p>
+                                <p class="text-right text-muted w-100 m-0 f-3">
+                                  02/06 00:00
+                                </p>
+                              </div>
+                              <div class="row pb-1 c-table">
+                                <div class="col text-center pl-1 pr-1">
+                                  <p class="text-muted f-4">Spread</p>
+                                </div>
+                                <div class="col text-center pl-1 pr-1">
+                                  <p class="text-muted f-4">Winner</p>
+                                  <p class="text-right">
+                                    <span class="float-left">1</span>
+                                    <span class="font-weight-bold">2.40</span>
+                                  </p>
+                                  <p class="text-right">
+                                    <span class="float-left">2</span>
+                                    <span class="font-weight-bold">2.00</span>
+                                  </p>
+                                  <p class="text-right">
+                                    <span class="float-left">X</span>
+                                    <span class="font-weight-bold">5.15</span>
+                                  </p>
+                                </div>
+                                <div class="col text-center pl-1 pr-1">
+                                  <p class="text-muted f-4">Over/Under</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="item">
+                              <div class="row pb-1 pl-2 pr-2">
+                                <p class="w-100 m-0">
+                                  Metallurg<br>Amur Khabarovsk
+                                </p>
+                                <p class="text-right text-muted w-100 m-0 f-3">
+                                  02/06 00:00
+                                </p>
+                              </div>
+                              <div class="row pb-1 c-table">
+                                <div class="col text-center pl-1 pr-1">
+                                  <p class="text-muted f-4">Spread</p>
+                                </div>
+                                <div class="col text-center pl-1 pr-1">
+                                  <p class="text-muted f-4">Winner</p>
+                                  <p class="text-right">
+                                    <span class="float-left">1</span>
+                                    <span class="font-weight-bold">2.40</span>
+                                  </p>
+                                  <p class="text-right">
+                                    <span class="float-left">2</span>
+                                    <span class="font-weight-bold">2.00</span>
+                                  </p>
+                                  <p class="text-right">
+                                    <span class="float-left">X</span>
+                                    <span class="font-weight-bold">5.15</span>
+                                  </p>
+                                </div>
+                                <div class="col text-center pl-1 pr-1">
+                                  <p class="text-muted f-4">Over/Under</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="item">
+                              <div class="row pb-1 pl-2 pr-2">
+                                <p class="w-100 m-0">
+                                  akbars<br>Amur Khabarovsk
+                                </p>
+                                <p class="text-right text-muted w-100 m-0 f-3">
+                                  02/06 00:00
+                                </p>
+                              </div>
+                              <div class="row pb-1 c-table">
+                                <div class="col text-center pl-1 pr-1">
+                                  <p class="text-muted f-4">Spread</p>
+                                </div>
+                                <div class="col text-center pl-1 pr-1">
+                                  <p class="text-muted f-4">Winner</p>
+                                  <p class="text-right">
+                                    <span class="float-left">1</span>
+                                    <span class="font-weight-bold">2.40</span>
+                                  </p>
+                                  <p class="text-right">
+                                    <span class="float-left">2</span>
+                                    <span class="font-weight-bold">2.00</span>
+                                  </p>
+                                  <p class="text-right">
+                                    <span class="float-left">X</span>
+                                    <span class="font-weight-bold">5.15</span>
+                                  </p>
+                                </div>
+                                <div class="col text-center pl-1 pr-1">
+                                  <p class="text-muted f-4">Over/Under</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="item">
+                              <div class="row pb-1 pl-2 pr-2">
+                                <p class="w-100 m-0">
+                                  Amur Khabarovsk<br>akbars
+                                </p>
+                                <p class="text-right text-muted w-100 m-0 f-3">
+                                  02/06 00:00
+                                </p>
+                              </div>
+                              <div class="row pb-1 c-table">
+                                <div class="col text-center pl-1 pr-1">
+                                  <p class="text-muted f-4">Spread</p>
+                                </div>
+                                <div class="col text-center pl-1 pr-1">
+                                  <p class="text-muted f-4">Winner</p>
+                                  <p class="text-right">
+                                    <span class="float-left">1</span>
+                                    <span class="font-weight-bold">2.40</span>
+                                  </p>
+                                  <p class="text-right">
+                                    <span class="float-left">2</span>
+                                    <span class="font-weight-bold">2.00</span>
+                                  </p>
+                                  <p class="text-right">
+                                    <span class="float-left">X</span>
+                                    <span class="font-weight-bold">5.15</span>
+                                  </p>
+                                </div>
+                                <div class="col text-center pl-1 pr-1">
+                                  <p class="text-muted f-4">Over/Under</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade f-1" id="l1t02" role="tabpanel">
+                <ul class="list-group list-group-flush border-bottom">
+                  <li class="list-group-item">
+                    <a class="text-dark f-1" href="#">NHL</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a class="text-dark f-1" href="#">Swedish Hockey League</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-pane fade f-1" id="l1t03" role="tabpanel">
+                <ul class="list-group list-group-flush border-bottom">
+                  <li class="list-group-item">
+                    <a class="text-dark f-1" href="#">NHL</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a class="text-dark f-1" href="#">Swedish Hockey League</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a class="text-dark f-1" href="#">Russia Short Hockey [3x10 min, Excluding OT]</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a class="text-dark f-1" href="#">Ice Cup East [3x10 min, Excluding OT]</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a class="text-dark f-1" href="#">Dream League [3x10 min, Excluding OT]</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a class="text-dark f-1" href="#">Esports NHL 20 League Pro [3x4 min, Excluding OT]</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a class="text-dark f-1" href="#">Esport Battle National Teams [3x5 min]</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a class="text-dark f-1" href="#">Esports NHL Cyber Pro [3x4 min, Excluding OT]</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-pane fade f-1" id="l1t04" role="tabpanel">
+                <p class="alert-light text-center text-muted p-5 f-1">
+                  No events were found
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="control">
+      <script src="../js/component/user-control.js"></script>
+    </div>
+  </div>
+
+  <script src="../js/functions.js"></script>
+  <!--  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>-->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

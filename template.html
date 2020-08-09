@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+  <!--  <meta name="theme-color" content="" />-->
+
+  <link rel="icon" type="image/png" href="img/icon/logo.png" />
+
+  <title>FUN88 Sportsbook &amp; Casino</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- JQuery 3.4.1 -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+  <!--  <script src="https://kit.fontawesome.com/df3fec80dc.js"></script>-->
+  <script type="text/javascript" src="js/config.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content y-scroll sb-0">
+      <header>
+        <script src="js/component/header.js"></script>
+        <script src="js/component/sidenav.js"></script>
+      </header>
+      
+      <section>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb" style="border-radius: 0px; margin-bottom: 0">
+            <li class="breadcrumb-item f-1"><a href="#">Home</a></li>
+            <li class="breadcrumb-item f-1 active" aria-current="page">Today's Events</li>
+          </ol>
+        </nav>
+        <div class="container">
+          <div class="row">
+            <nav class="nav x-scroll scroll-snap-align-center sb-1 no-wrap w-100" role="tablist">
+              <a class="underline d-inline-block p-1 f-1 active" data-toggle="tab" href="#d01" role="tab">
+                <img class="img-fluid h-52" src="img/icon/tab/football.png" alt="">
+                <p class="text-primary m-0 f-4">Football</p>
+                <p class="text-secondary font-weight-bold m-0 f-5">10</p>
+              </a>
+              <a class="underline d-inline-block p-1 f-1" data-toggle="tab" href="#d02" role="tab">
+                <img class="img-fluid h-52" src="img/icon/tab/snooker.png" alt="">
+                <p class="text-primary m-0 f-4">Snooker</p>
+                <p class="text-secondary font-weight-bold m-0 f-5">5</p>
+              </a>
+              <a class="underline d-inline-block p-1 f-1" data-toggle="tab" href="#d03" role="tab">
+                <img class="img-fluid h-52" src="img/icon/tab/mma.png" alt="">
+                <p class="text-primary m-0 f-4">MMA</p>
+                <p class="text-secondary font-weight-bold m-0 f-5">5</p>
+              </a>
+              <a class="underline d-inline-block p-1 f-1" data-toggle="tab" href="#d04" role="tab">
+                <img class="img-fluid h-52" src="img/icon/tab/boxing.png" alt="">
+                <p class="text-primary m-0 f-4">Boxing</p>
+                <p class="text-secondary font-weight-bold m-0 f-5">5</p>
+              </a>
+              <a class="underline d-inline-block p-1 f-1" data-toggle="tab" href="#d05" role="tab">
+                <img class="img-fluid h-52" src="img/icon/tab/sports.png" alt="">
+                <p class="text-primary m-0 f-4">All Sports</p>
+                <p class="text-secondary font-weight-bold m-0 f-5">5</p>
+              </a>
+              <a class="underline d-inline-block p-1 f-1" data-toggle="tab" href="#d06" role="tab">
+                <img class="img-fluid h-52" src="img/icon/tab/golf.png" alt="">
+                <p class="text-primary m-0 f-4">Golf</p>
+                <p class="text-secondary font-weight-bold m-0 f-5">5</p>
+              </a>
+              <a class="underline d-inline-block p-1 f-1" data-toggle="tab" href="#d07" role="tab">
+                <img class="img-fluid h-52" src="img/icon/tab/basketball.png" alt="">
+                <p class="text-primary m-0 f-4">Basketball</p>
+                <p class="text-secondary font-weight-bold m-0 f-5">5</p>
+              </a>
+              <a class="underline d-inline-block p-1 f-1" data-toggle="tab" href="#d08" role="tab">
+                <img class="img-fluid h-52" src="img/icon/tab/tennis.png" alt="">
+                <p class="text-primary m-0 f-4">Tennis</p>
+                <p class="text-secondary font-weight-bold m-0 f-5">5</p>
+              </a>
+              <a class="underline d-inline-block p-1 f-1" data-toggle="tab" href="#d09" role="tab">
+                <img class="img-fluid h-52" src="img/icon/tab/search.png" alt="">
+                <p class="text-primary m-0 f-4">Bet Search</p>
+                <p class="text-secondary font-weight-bold m-0 f-5">5</p>
+              </a>
+              <a class="underline d-inline-block p-1 f-1" data-toggle="tab" href="#d10" role="tab">
+                <img class="img-fluid h-52" src="img/icon/tab/darts.png" alt="">
+                <p class="text-primary m-0 f-4">Darts</p>
+                <p class="text-secondary font-weight-bold m-0 f-5">5</p>
+              </a>
+              <a class="underline d-inline-block p-1 f-1" data-toggle="tab" href="#d11" role="tab">
+                <img class="img-fluid h-52" src="img/icon/tab/casino.png" alt="">
+                <p class="text-primary m-0 f-4">Casino</p>
+                <p class="text-secondary font-weight-bold m-0 f-5">5</p>
+              </a>
+            </nav>
+
+            <div class="tab-content w-100">
+              <div class="tab-pane fade f-1 show active" id="d01" role="tabpanel">
+<!--
+                <div class="x-scroll scroll-snap-align-center sb-1">
+                  <div class="xc d-inline-block p-1 active">
+                    <img class="img-fluid h-52" src="img/icon/tab/football.png" alt="">
+                    <p class="text-center text-primary m-0 f-4">Football</p>
+                    <p class="text-center text-secondary font-weight-bold m-0 f-5">5</p>
+                  </div>
+                  <div class="xc d-inline-block p-1">
+                    <img class="img-fluid h-52" src="img/icon/tab/snooker.png" alt="">
+                    <p class="text-center text-primary m-0 f-4">Snooker</p>
+                    <p class="text-center text-secondary font-weight-bold m-0 f-5">5</p>
+                  </div>
+                  <div class="xc d-inline-block p-1">
+                    <img class="img-fluid h-52" src="img/icon/tab/mma.png" alt="">
+                    <p class="text-center text-primary m-0 f-4">MMA</p>
+                    <p class="text-center text-secondary font-weight-bold m-0 f-5">5</p>
+                  </div>
+                  <div class="xc d-inline-block p-1">
+                    <img class="img-fluid h-52" src="img/icon/tab/boxing.png" alt="">
+                    <p class="text-center text-primary m-0 f-4">Boxing</p>
+                    <p class="text-center text-secondary font-weight-bold m-0 f-5">5</p>
+                  </div>
+                  <div class="xc d-inline-block p-1">
+                    <img class="img-fluid h-52" src="img/icon/tab/sports.png" alt="">
+                    <p class="text-center text-primary m-0 f-4">All Sports</p>
+                    <p class="text-center text-secondary font-weight-bold m-0 f-5">5</p>
+                  </div>
+                  <div class="xc d-inline-block p-1">
+                    <img class="img-fluid h-52" src="img/icon/tab/golf.png" alt="">
+                    <p class="text-center text-primary m-0 f-4">Golf</p>
+                    <p class="text-center text-secondary font-weight-bold m-0 f-5">5</p>
+                  </div>
+                  <div class="xc d-inline-block p-1">
+                    <img class="img-fluid h-52" src="img/icon/tab/basketball.png" alt="">
+                    <p class="text-center text-primary m-0 f-4">Basketball</p>
+                    <p class="text-center text-secondary font-weight-bold m-0 f-5">5</p>
+                  </div>
+                  <div class="xc d-inline-block p-1">
+                    <img class="img-fluid h-52" src="img/icon/tab/tennis.png" alt="">
+                    <p class="text-center text-primary m-0 f-4">Tennis</p>
+                    <p class="text-center text-secondary font-weight-bold m-0 f-5">5</p>
+                  </div>
+                  <div class="xc d-inline-block p-1">
+                    <img class="img-fluid h-52" src="img/icon/tab/search.png" alt="">
+                    <p class="text-center text-primary m-0 f-4">Bet Search</p>
+                    <p class="text-center text-secondary font-weight-bold m-0 f-5">5</p>
+                  </div>
+                  <div class="xc d-inline-block p-1">
+                    <img class="img-fluid h-52" src="img/icon/tab/darts.png" alt="">
+                    <p class="text-center text-primary m-0 f-4">Darts</p>
+                    <p class="text-center text-secondary font-weight-bold m-0 f-5">5</p>
+                  </div>
+                  <div class="xc d-inline-block p-1">
+                    <img class="img-fluid h-52" src="img/icon/tab/casino.png" alt="">
+                    <p class="text-center text-primary m-0 f-4">Casino</p>
+                    <p class="text-center text-secondary font-weight-bold m-0 f-5">5</p>
+                  </div>
+                </div>
+-->
+                <style>
+
+/*
+                  .xc.active {
+                    border-color: dodgerblue;
+                  }
+*/
+
+                  .xc {
+/*                    border-bottom: 2px solid transparent;*/
+                    background: #fff;
+                    width: 80px;
+/*                    text-align: center;*/
+                  }
+                </style>
+              </div>
+              <div class="tab-pane fade f-1" id="d02" role="tabpanel">
+                <div class="scrolling-wrapper x-croll">
+                  <div class="card">
+                    <h2>Card</h2>
+                    <h2>Card</h2>
+                  </div>
+                  <div class="card">
+                    <h2>Card</h2>
+                  </div>
+                  <div class="card">
+                    <h2>Card</h2>
+                  </div>
+                </div>
+                <style>
+                  .scrolling-wrapper {
+                    overflow-y: hidden;
+                    white-space: nowrap;
+                    -webkit-overflow-scrolling: touch;
+                    -ms-overflow-style: -ms-autohiding-scrollbar;
+                  }
+
+                  .card {
+                    vertical-align: middle;
+                    display: inline-block;
+                  }
+                </style>
+              </div>
+              <div class="tab-pane fade f-1" id="d03" role="tabpanel">c</div>
+              <div class="tab-pane fade f-1" id="d04" role="tabpanel">d</div>
+              <div class="tab-pane fade f-1" id="d05" role="tabpanel">d</div>
+              <div class="tab-pane fade f-1" id="d06" role="tabpanel">e</div>
+              <div class="tab-pane fade f-1" id="d07" role="tabpanel">f</div>
+              <div class="tab-pane fade f-1" id="d08" role="tabpanel">g</div>
+              <div class="tab-pane fade f-1" id="d09" role="tabpanel">g</div>
+              <div class="tab-pane fade f-1" id="d10" role="tabpanel">g</div>
+              <div class="tab-pane fade f-1" id="d11" role="tabpanel">g</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="control">
+      <script src="js/component/user-control.js"></script>
+    </div>
+  </div>
+
+  <script src="js/functions.js"></script>
+  <!--  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>-->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

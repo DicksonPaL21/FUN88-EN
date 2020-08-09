@@ -1,0 +1,2755 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+  <!--  <meta name="theme-color" content="" />-->
+
+  <link rel="icon" type="image/png" href="img/icon/logo.png" />
+
+  <title>FUN88 Sportsbook &amp; Casino</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- JQuery 3.4.1 -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+  <!--  <script src="https://kit.fontawesome.com/df3fec80dc.js"></script>-->
+  <script type="text/javascript" src="js/config.js"></script>
+  
+  <style type="text/css">
+    .nav[role="tablist"] > [role="tab"] {
+      width: 80px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content y-scroll sb-0">
+      <header>
+        <script src="js/component/header.js"></script>
+        <script src="js/component/sidenav.js"></script>
+      </header>
+
+      <section>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb" style="border-radius: 0px; margin-bottom: 0">
+            <li class="breadcrumb-item f-1"><a href="#">Home</a></li>
+            <li class="breadcrumb-item f-1 active" aria-current="page">Today's Events</li>
+          </ol>
+        </nav>
+        <div class="container">
+          <div class="row">
+            <nav class="nav x-scroll scroll-snap-align-center sb-1 no-wrap w-100" role="tablist">
+              <a class="underline d-inline-block p-1 f-1 active" data-toggle="tab" href="#l1t01" role="tab">
+                <img class="img-fluid h-52" src="img/icon/tab/football.png" alt="">
+                <p class="text-center text-primary m-0 f-4">Football</p>
+                <p class="text-center text-secondary font-weight-bold m-0 f-5">10</p>
+              </a>
+              <a class="underline d-inline-block p-1 f-1" data-toggle="tab" href="#l1t02" role="tab">
+                <img class="img-fluid h-52" src="img/icon/tab/snooker.png" alt="">
+                <p class="text-center text-primary m-0 f-4">Snooker</p>
+                <p class="text-center text-secondary font-weight-bold m-0 f-5">10</p>
+              </a>
+              <a class="underline d-inline-block p-1 f-1" data-toggle="tab" href="#l1t03" role="tab">
+                <img class="img-fluid h-52" src="img/icon/tab/american-football.png" alt="">
+                <p class="text-center text-primary m-0 f-4">American Football</p>
+                <p class="text-center text-secondary font-weight-bold m-0 f-5">3</p>
+              </a>
+              <a class="underline d-inline-block p-1 f-1" data-toggle="tab" href="#l1t04" role="tab">
+                <img class="img-fluid h-52" src="img/icon/tab/boxing.png" alt="">
+                <p class="text-center text-primary m-0 f-4">Boxing</p>
+                <p class="text-center text-secondary font-weight-bold m-0 f-5">4</p>
+              </a>
+              <a class="underline d-inline-block p-1 f-1" data-toggle="tab" href="#l1t05" role="tab">
+                <img class="img-fluid h-52" src="img/icon/tab/esports.png" alt="">
+                <p class="text-center text-primary m-0 f-4">Esports</p>
+                <p class="text-center text-secondary font-weight-bold m-0 f-5">8</p>
+              </a>
+              <a class="underline d-inline-block p-1 f-1" data-toggle="tab" href="#l1t06" role="tab">
+                <img class="img-fluid h-52" src="img/icon/tab/golf.png" alt="">
+                <p class="text-center text-primary m-0 f-4">Golf</p>
+                <p class="text-center text-secondary font-weight-bold m-0 f-5">5</p>
+              </a>
+              <a class="underline d-inline-block p-1 f-1" data-toggle="tab" href="#l1t07" role="tab">
+                <img class="img-fluid h-52" src="img/icon/tab/basketball.png" alt="">
+                <p class="text-center text-primary m-0 f-4">Basketball</p>
+                <p class="text-center text-secondary font-weight-bold m-0 f-5">1</p>
+              </a>
+              <a class="underline d-inline-block p-1 f-1" data-toggle="tab" href="#l1t08" role="tab">
+                <img class="img-fluid h-52" src="img/icon/tab/tennis.png" alt="">
+                <p class="text-center text-primary m-0 f-4">Tennis</p>
+                <p class="text-center text-secondary font-weight-bold m-0 f-5">7</p>
+              </a>
+              <a class="underline d-inline-block p-1 f-1" data-toggle="tab" href="#l1t09" role="tab">
+                <img class="img-fluid h-52" src="img/icon/tab/cricket.png" alt="">
+                <p class="text-center text-primary m-0 f-4">Cricket</p>
+                <p class="text-center text-secondary font-weight-bold m-0 f-5">5</p>
+              </a>
+              <a class="underline d-inline-block p-1 f-1" data-toggle="tab" href="#l1t10" role="tab">
+                <img class="img-fluid h-52" src="img/icon/tab/darts.png" alt="">
+                <p class="text-center text-primary m-0 f-4">Darts</p>
+                <p class="text-center text-secondary font-weight-bold m-0 f-5">8</p>
+              </a>
+              <a class="underline d-inline-block p-1 f-1" data-toggle="tab" href="#l1t11" role="tab">
+                <img class="img-fluid h-52" src="img/icon/tab/handball.png" alt="">
+                <p class="text-center text-primary m-0 f-4">Handball</p>
+                <p class="text-center text-secondary font-weight-bold m-0 f-5">4</p>
+              </a>
+              <a class="underline d-inline-block p-1 f-1" data-toggle="tab" href="#l1t12" role="tab">
+                <img class="img-fluid h-52" src="img/icon/tab/baseball.png" alt="">
+                <p class="text-center text-primary m-0 f-4">Baseball</p>
+                <p class="text-center text-secondary font-weight-bold m-0 f-5">3</p>
+              </a>
+              <a class="underline d-inline-block p-1 f-1" data-toggle="tab" href="#l1t13" role="tab">
+                <img class="img-fluid h-52" src="img/icon/tab/cycling.png" alt="">
+                <p class="text-center text-primary m-0 f-4">Cycling</p>
+                <p class="text-center text-secondary font-weight-bold m-0 f-5">4</p>
+              </a>
+              <a class="underline d-inline-block p-1 f-1" data-toggle="tab" href="#l1t14" role="tab">
+                <img class="img-fluid h-52" src="img/icon/tab/ice-hockey.png" alt="">
+                <p class="text-center text-primary m-0 f-4">Ice Hockey</p>
+                <p class="text-center text-secondary font-weight-bold m-0 f-5">8</p>
+              </a>
+              <a class="underline d-inline-block p-1 f-1" data-toggle="tab" href="#l1t15" role="tab">
+                <img class="img-fluid h-52" src="img/icon/tab/specials.png" alt="">
+                <p class="text-center text-primary m-0 f-4">Specials</p>
+                <p class="text-center text-secondary font-weight-bold m-0 f-5">4</p>
+              </a>
+              <a class="underline d-inline-block p-1 f-1" data-toggle="tab" href="#l1t16" role="tab">
+                <img class="img-fluid h-52" src="img/icon/tab/rugby.png" alt="">
+                <p class="text-center text-primary m-0 f-4">Rugby League</p>
+                <p class="text-center text-secondary font-weight-bold m-0 f-5">10</p>
+              </a>
+            </nav>
+            
+            <script type="text/javascript">
+              var _tabs = $('.nav[role="tablist"] > [role="tab"]')
+              
+              for (_tab of _tabs) {
+                var _this = $(_tab.children[1])
+                var text = _this.html()
+                var marquee = $('<marquee>', {class: 'align-bottom', behavior: 'alternate', scrolldelay: '500'})
+                
+                if (text.length > 10) {
+                  marquee.html(text)
+                  _this.html(marquee)
+                }
+              }
+            </script>
+
+            <div class="tab-content w-100">
+              <div class="tab-pane fade f-1 show active" id="l1t01" role="tabpanel">
+                <div class="accordion accord-1">
+                  <div class="card">
+                    <div class="btn text-left card-header f-1" id="a1h1" data-toggle="collapse" data-target="#a1c1" aria-expanded="true" aria-controls="a1c1">
+                      Denmark - Superligaen
+                      <span class="badge badge-primary badge-pill">2</span>
+                    </div>
+                    <div id="a1c1" class="collapse show f-2" aria-labelledby="a1h1">
+                      <div class="card-body p-0 pt-1 pb-1">
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-6 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Esbjerg Randers FC
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">X</p>
+                            <p class="m-0 font-weight-bold">3.25</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-6 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Hobro AC Horsens
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">X</p>
+                            <p class="m-0 font-weight-bold">3.25</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="btn text-left card-header f-1" id="a1h2" data-toggle="collapse" data-target="#a1c2" aria-expanded="true" aria-controls="a1c2">
+                      Spain - La Liga
+                      <span class="badge badge-primary badge-pill">4</span>
+                    </div>
+                    <div id="a1c2" class="collapse show f-2" aria-labelledby="a1h2">
+                      <div class="card-body p-0 pt-1 pb-1">
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-6 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">13/06</span>
+                                <span class="event-time">01:30</span>
+                              </div>
+                              <div class="col p-0">
+                                Granada CF Getafe
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">3.15</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">X</p>
+                            <p class="m-0 font-weight-bold">2.95</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.55</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-6 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Valencia Levante
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">X</p>
+                            <p class="m-0 font-weight-bold">3.25</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-6 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Espanyol Alaves
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">X</p>
+                            <p class="m-0 font-weight-bold">3.25</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-6 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Celta Vigo Villarreal
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">X</p>
+                            <p class="m-0 font-weight-bold">3.25</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="btn text-left card-header f-1" id="a1h3" data-toggle="collapse" data-target="#a1c3" aria-expanded="true" aria-controls="a1c3">
+                      Coppa Italia
+                      <span class="badge badge-primary badge-pill">1</span>
+                    </div>
+                    <div id="a1c3" class="collapse show f-2" aria-labelledby="a1h3">
+                      <div class="card-body p-0 pt-1 pb-1">
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-6 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Juventus AC Milan
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">X</p>
+                            <p class="m-0 font-weight-bold">3.25</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="btn text-left card-header f-1" id="a1h4" data-toggle="collapse" data-target="#a1c4" aria-expanded="true" aria-controls="a1c4">
+                      Croatia - 1.HNL
+                      <span class="badge badge-primary badge-pill">2</span>
+                    </div>
+                    <div id="a1c4" class="collapse show f-2" aria-labelledby="a1h4">
+                      <div class="card-body p-0 pt-1 pb-1">
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-6 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                NK Varazdin Rijeka
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">X</p>
+                            <p class="m-0 font-weight-bold">3.25</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-6 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Lokomotiva Zagreb Dinamo Zagreb
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">X</p>
+                            <p class="m-0 font-weight-bold">3.25</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="btn text-left card-header f-1" id="a1h5" data-toggle="collapse" data-target="#a1c5" aria-expanded="true" aria-controls="a1c5">
+                      Czech Republic
+                      <span class="badge badge-primary badge-pill">1</span>
+                    </div>
+                    <div id="a1c5" class="collapse show f-2" aria-labelledby="a1h5">
+                      <div class="card-body p-0 pt-1 pb-1">
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-6 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Pardobice Slovan Varnsdorf
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">X</p>
+                            <p class="m-0 font-weight-bold">3.25</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade f-1" id="l1t02" role="tabpanel">
+                <div class="accordion accord-2">
+                  <div class="card">
+                    <div class="btn text-left card-header f-1" id="a2h1" data-toggle="collapse" data-target="#a2c1" aria-expanded="true" aria-controls="a2c1">
+                      Denmark - Superligaen
+                      <span class="badge badge-primary badge-pill">2</span>
+                    </div>
+                    <div id="a2c1" class="collapse show f-2" aria-labelledby="a2h1">
+                      <div class="card-body p-0 pt-1 pb-1">
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-6 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Esbjerg Randers FC
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">X</p>
+                            <p class="m-0 font-weight-bold">3.25</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-6 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Hobro AC Horsens
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">X</p>
+                            <p class="m-0 font-weight-bold">3.25</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="btn text-left card-header f-1" id="a2h2" data-toggle="collapse" data-target="#a2c2" aria-expanded="true" aria-controls="a2c2">
+                      Spain - La Liga
+                      <span class="badge badge-primary badge-pill">4</span>
+                    </div>
+                    <div id="a2c2" class="collapse show f-2" aria-labelledby="a2h2">
+                      <div class="card-body p-0 pt-1 pb-1">
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-6 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">13/06</span>
+                                <span class="event-time">01:30</span>
+                              </div>
+                              <div class="col p-0">
+                                Granada CF Getafe
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">3.15</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">X</p>
+                            <p class="m-0 font-weight-bold">2.95</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.55</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-6 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Valencia Levante
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">X</p>
+                            <p class="m-0 font-weight-bold">3.25</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-6 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Espanyol Alaves
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">X</p>
+                            <p class="m-0 font-weight-bold">3.25</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-6 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Celta Vigo Villarreal
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">X</p>
+                            <p class="m-0 font-weight-bold">3.25</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="btn text-left card-header f-1" id="a2h3" data-toggle="collapse" data-target="#a2c3" aria-expanded="true" aria-controls="a2c3">
+                      Coppa Italia
+                      <span class="badge badge-primary badge-pill">1</span>
+                    </div>
+                    <div id="a2c3" class="collapse show f-2" aria-labelledby="a2h3">
+                      <div class="card-body p-0 pt-1 pb-1">
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-6 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Juventus AC Milan
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">X</p>
+                            <p class="m-0 font-weight-bold">3.25</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="btn text-left card-header f-1" id="a2h4" data-toggle="collapse" data-target="#a2c4" aria-expanded="true" aria-controls="a2c4">
+                      Croatia - 1.HNL
+                      <span class="badge badge-primary badge-pill">2</span>
+                    </div>
+                    <div id="a2c4" class="collapse show f-2" aria-labelledby="a2h4">
+                      <div class="card-body p-0 pt-1 pb-1">
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-6 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                NK Varazdin Rijeka
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">X</p>
+                            <p class="m-0 font-weight-bold">3.25</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-6 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Lokomotiva Zagreb Dinamo Zagreb
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">X</p>
+                            <p class="m-0 font-weight-bold">3.25</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="btn text-left card-header f-1" id="a2h5" data-toggle="collapse" data-target="#a2c5" aria-expanded="true" aria-controls="a2c5">
+                      Czech Republic
+                      <span class="badge badge-primary badge-pill">1</span>
+                    </div>
+                    <div id="a2c5" class="collapse show f-2" aria-labelledby="a2h5">
+                      <div class="card-body p-0 pt-1 pb-1">
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-6 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Pardobice Slovan Varnsdorf
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">X</p>
+                            <p class="m-0 font-weight-bold">3.25</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade f-1" id="l1t03" role="tabpanel">
+                <div class="accordion accord-3">
+                  <div class="card">
+                    <div class="btn text-left card-header f-1" id="a3h1" data-toggle="collapse" data-target="#a3c1" aria-expanded="true" aria-controls="a3c1">
+                      NFL
+                      <span class="badge badge-primary badge-pill">3</span>
+                    </div>
+                    <div id="a3c1" class="collapse show f-2" aria-labelledby="a3h1">
+                      <div class="card-body">
+                        <div class="item">
+                          <div class="row pb-1 pl-2 pr-2">
+                            <p class="w-100 m-0">
+                              Kansas City. Chiefs<br>Houston Texans
+                            </p>
+                            <p class="text-right text-muted w-100 m-0 f-3">
+                              02/06 00:00
+                            </p>
+                          </div>
+                          <div class="row pb-1 c-table">
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Spread</p>
+                              <p class="text-right">
+                                <span class="float-left">-10.5</span>
+                                <span class="font-weight-bold">2.01</span>
+                              </p>
+                              <p class="text-right">
+                                <span class="float-left">+10.5</span>
+                                <span class="font-weight-bold">1.82</span>
+                              </p>
+                            </div>
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Money Line</p>
+                              <p class="text-right">
+                                <span class="float-left">1</span>
+                                <span class="font-weight-bold">1.19</span>
+                              </p>
+                              <p class="text-right">
+                                <span class="float-left">1</span>
+                                <span class="font-weight-bold">4.45</span>
+                              </p>
+                            </div>
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Total Points</p>
+                              <p class="text-right">
+                                <span class="float-left">O 55</span>
+                                <span class="font-weight-bold">1.90</span>
+                              </p>
+                              <p class="text-right">
+                                <span class="float-left">O 55</span>
+                                <span class="font-weight-bold">1.90</span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="row pb-1 pl-2 pr-2">
+                            <p class="w-100 m-0">
+                              New England Patriots<br>Miami Dolphins
+                            </p>
+                            <p class="text-right text-muted w-100 m-0 f-3">
+                              02/06 00:00
+                            </p>
+                          </div>
+                          <div class="row pb-1 c-table">
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Spread</p>
+                              <p class="text-right">
+                                <span class="float-left">-10.5</span>
+                                <span class="font-weight-bold">2.01</span>
+                              </p>
+                              <p class="text-right">
+                                <span class="float-left">+10.5</span>
+                                <span class="font-weight-bold">1.82</span>
+                              </p>
+                            </div>
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Money Line</p>
+                              <p class="text-right">
+                                <span class="float-left">1</span>
+                                <span class="font-weight-bold">1.19</span>
+                              </p>
+                              <p class="text-right">
+                                <span class="float-left">1</span>
+                                <span class="font-weight-bold">4.45</span>
+                              </p>
+                            </div>
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Total Points</p>
+                              <p class="text-right">
+                                <span class="float-left">O 55</span>
+                                <span class="font-weight-bold">1.90</span>
+                              </p>
+                              <p class="text-right">
+                                <span class="float-left">O 55</span>
+                                <span class="font-weight-bold">1.90</span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="row pb-1 pl-2 pr-2">
+                            <p class="w-100 m-0">
+                              Baltimore Ravens<br>Cleveland Browns
+                            </p>
+                            <p class="text-right text-muted w-100 m-0 f-3">
+                              02/06 00:00
+                            </p>
+                          </div>
+                          <div class="row pb-1 c-table">
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Spread</p>
+                              <p class="text-right">
+                                <span class="float-left">-10.5</span>
+                                <span class="font-weight-bold">2.01</span>
+                              </p>
+                              <p class="text-right">
+                                <span class="float-left">+10.5</span>
+                                <span class="font-weight-bold">1.82</span>
+                              </p>
+                            </div>
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Money Line</p>
+                              <p class="text-right">
+                                <span class="float-left">1</span>
+                                <span class="font-weight-bold">1.19</span>
+                              </p>
+                              <p class="text-right">
+                                <span class="float-left">1</span>
+                                <span class="font-weight-bold">4.45</span>
+                              </p>
+                            </div>
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Total Points</p>
+                              <p class="text-right">
+                                <span class="float-left">O 55</span>
+                                <span class="font-weight-bold">1.90</span>
+                              </p>
+                              <p class="text-right">
+                                <span class="float-left">O 55</span>
+                                <span class="font-weight-bold">1.90</span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade f-1" id="l1t04" role="tabpanel">
+                <div class="accordion accord-4">
+                  <div class="card">
+                    <div class="btn text-left card-header f-1" id="a4h1" data-toggle="collapse" data-target="#a4c1" aria-expanded="true" aria-controls="a4c1">
+                      Boxing
+                      <span class="badge badge-primary badge-pill">4</span>
+                    </div>
+                    <div id="a4c1" class="collapse show f-2" aria-labelledby="a4h1">
+                      <div class="card-body p-0 pt-1 pb-1">
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-8 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Lyndon Arthur<br>Anthony Yarder
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-8 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Daniel Dubois<br>Joe Joyce
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-8 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Anthony joshua<br>Kubrat Pulev
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-8 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Anthony Joshua<br>Tyson Fury
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade f-1" id="l1t05" role="tabpanel">
+                <div class="accordion accord-5">
+                  <div class="card">
+                    <div class="btn text-left card-header f-1" id="a5h1" data-toggle="collapse" data-target="#a5c1" aria-expanded="true" aria-controls="a5c1">
+                      League of Legends China Pro League
+                      <span class="badge badge-primary badge-pill">2</span>
+                    </div>
+                    <div id="a5c1" class="collapse show f-2" aria-labelledby="a5h1">
+                      <div class="card-body p-0 pt-1 pb-1">
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-8 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                eStar Gaming<br>Bilibili Gaming
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-8 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Vici Gaming<br>Team WE
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="btn text-left card-header f-1" id="a5h2" data-toggle="collapse" data-target="#a5c2" aria-expanded="true" aria-controls="a5c2">
+                      Counter-Strike: GO ESEA
+                      <span class="badge badge-primary badge-pill">6</span>
+                    </div>
+                    <div id="a5c2" class="collapse show f-2" aria-labelledby="a5h2">
+                      <div class="card-body p-0 pt-1 pb-1">
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-8 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">13/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Avant Gaming<br>Rooster
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">3.15</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.55</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-8 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">13/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Bantz<br>Avant Gaming
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">3.15</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.55</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-8 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">13/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Paradox<br>The Chiefs
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">3.15</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.55</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-8 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">13/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                The Chiefs<br>Ground Zero
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">3.15</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.55</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-8 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">13/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Really Weird<br>Paradox
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">3.15</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.55</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-8 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">13/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                TWA<br>Avant Gaming
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">3.15</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.55</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade f-1" id="l1t06" role="tabpanel">
+                <div class="accordion accord-6">
+                  <div class="card">
+                    <div class="btn text-left card-header f-1" id="a6h1" data-toggle="collapse" data-target="#a6c1" aria-expanded="true" aria-controls="a6c1">
+                      Charles Schwab Challenge
+                      <span class="badge badge-primary badge-pill">5</span>
+                    </div>
+                    <div id="a6c1" class="collapse show f-2" aria-labelledby="a6h1">
+                      <div class="card-body p-0 pt-1 pb-1">
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-8 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Sungjae Im [Tournament]<br>Patrick Reed [Tournament]
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-8 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Marc Leishman [Tournament]<br>Collin Morikawa [Tournament]
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-8 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Justin Rose [Tournament]<br>Matthew Fitzpatrick [Tournament]
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-8 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Dustin Johnson [Tournament]<br>Brooks Koepka [Tournament]
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-8 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Bryson Dechambeau [Tournament]<br>Xander Schauffele [Tournament]
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade f-1" id="l1t07" role="tabpanel">
+                <div class="accordion accord-7">
+                  <div class="card">
+                    <div class="btn text-left card-header f-1" id="a7h1" data-toggle="collapse" data-target="#a7c1" aria-expanded="true" aria-controls="a7c1">
+                      Germany - Bundesliga
+                      <span class="badge badge-primary badge-pill">1</span>
+                    </div>
+                    <div id="a7c1" class="collapse show f-2" aria-labelledby="a7h1">
+                      <div class="card-body">
+                        <div class="item">
+                          <div class="row pb-1 pl-2 pr-2">
+                            <p class="w-100 m-0">
+                              Brose Bamberg<br>Rasta Vechta
+                            </p>
+                            <p class="text-right text-muted w-100 m-0 f-3">
+                              02/06 00:00
+                            </p>
+                          </div>
+                          <div class="row pb-1 c-table">
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Spread</p>
+                              <p class="text-right">
+                                <span class="float-left">-8</span>
+                                <span class="font-weight-bold">1.91</span>
+                              </p>
+                              <p class="text-right">
+                                <span class="float-left">+8</span>
+                                <span class="font-weight-bold">1.90</span>
+                              </p>
+                            </div>
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Money Line</p>
+                              <p class="text-right">
+                                <span class="float-left">1</span>
+                                <span class="font-weight-bold">1.25</span>
+                              </p>
+                              <p class="text-right">
+                                <span class="float-left">1</span>
+                                <span class="font-weight-bold">3.65</span>
+                              </p>
+                            </div>
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Total Points</p>
+                              <p class="text-right">
+                                <span class="float-left">O 165</span>
+                                <span class="font-weight-bold">1.90</span>
+                              </p>
+                              <p class="text-right">
+                                <span class="float-left">O 165</span>
+                                <span class="font-weight-bold">1.90</span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade f-1" id="l1t08" role="tabpanel">
+                <div class="accordion accord-8">
+                  <div class="card">
+                    <div class="btn text-left card-header f-1" id="a8h1" data-toggle="collapse" data-target="#a8c1" aria-expanded="true" aria-controls="a8c1">
+                      Austrian Pro Series
+                      <span class="badge badge-primary badge-pill">4</span>
+                    </div>
+                    <div id="a8c1" class="collapse show f-2" aria-labelledby="a8h1">
+                      <div class="card-body p-0 pt-1 pb-1">
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-8 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Philipp Oswald<br>Maximilian Neuchrist
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-8 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Sebastian Ofner<br>Lukas Neumayer
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-8 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Lucas Meidler<br>David Pichler
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-8 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Jonas Trinker<br>Dennis Novak
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="btn text-left card-header f-1" id="a8h2" data-toggle="collapse" data-target="#a8c2" aria-expanded="true" aria-controls="a8c2">
+                      GST Tours Matchplay 120 Women
+                      <span class="badge badge-primary badge-pill">1</span>
+                    </div>
+                    <div id="a8c2" class="collapse show f-2" aria-labelledby="a8h2">
+                      <div class="card-body p-0 pt-1 pb-1">
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-8 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">13/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Caroline Dolehide<br>Jamie Loeb
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">3.15</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.55</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="btn text-left card-header f-1" id="a8h3" data-toggle="collapse" data-target="#a8c3" aria-expanded="true" aria-controls="a8c3">
+                      East Coast USA Pro Series
+                      <span class="badge badge-primary badge-pill">2</span>
+                    </div>
+                    <div id="a8c3" class="collapse show f-2" aria-labelledby="a8h3">
+                      <div class="card-body p-0 pt-1 pb-1">
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-8 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">13/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Alejandro Tabilo<br>Sam Riffice
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">3.15</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.55</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-8 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">13/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Mischa Zverev<br>Liam Draxl
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">3.15</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.55</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade f-1" id="l1t09" role="tabpanel">
+                <div class="accordion accord-9">
+                  <div class="card">
+                    <div class="btn text-left card-header f-1" id="a9h1" data-toggle="collapse" data-target="#a9c1" aria-expanded="true" aria-controls="a9c1">
+                      T10 European Cricket Series
+                      <span class="badge badge-primary badge-pill">4</span>
+                    </div>
+                    <div id="a9c1" class="collapse show f-2" aria-labelledby="a9h1">
+                      <div class="card-body p-0 pt-1 pb-1">
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-8 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Stockholm CC<br>Indiska CC
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-8 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Sigtuna CC<br>Stockholm CC
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-8 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Indiska CC<br>Sigtuna CC
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-8 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Alby Zalmi CC<br>Stockholm Mumbai Indians
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="btn text-left card-header f-1" id="a9h2" data-toggle="collapse" data-target="#a9c2" aria-expanded="true" aria-controls="a9c2">
+                      Finish Premier League T20
+                      <span class="badge badge-primary badge-pill">1</span>
+                    </div>
+                    <div id="a9c2" class="collapse show f-2" aria-labelledby="a9h2">
+                      <div class="card-body p-0 pt-1 pb-1">
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-8 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">13/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Empire CC<br>Vantaa CC
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">3.15</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.55</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade f-1" id="l1t10" role="tabpanel">
+                <div class="accordion accord-10">
+                  <div class="card">
+                    <div class="btn text-left card-header f-1" id="a10h1" data-toggle="collapse" data-target="#a10c1" aria-expanded="true" aria-controls="a10c1">
+                      Modus Icons League
+                      <span class="badge badge-primary badge-pill">5</span>
+                    </div>
+                    <div id="a10c1" class="collapse show f-2" aria-labelledby="a10h1">
+                      <div class="card-body p-0 pt-1 pb-1">
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-8 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Jose Antonio Justicia Perales<br>Diogo Portela
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-8 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Jarred Cole<br>Jose Antonio Justicia Perales
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-8 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Diogo Portela<br>Jarred Cole
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-8 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Mark Dudbridge<br>Jose Antonio Justicia Perales
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-8 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Martin Adams<br>Diogo Portela
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="btn text-left card-header f-1" id="a10h2" data-toggle="collapse" data-target="#a10c2" aria-expanded="true" aria-controls="a10c2">
+                      ISO Darts Challenge
+                      <span class="badge badge-primary badge-pill">3</span>
+                    </div>
+                    <div id="a10c2" class="collapse show f-2" aria-labelledby="a10h2">
+                      <div class="card-body p-0 pt-1 pb-1">
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-8 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">13/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Justin Thompson<br>Aaron Morrison
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">3.15</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.55</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-8 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">13/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Mal Cuming<br>Stuart Coburn
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">3.15</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.55</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-8 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">13/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Peter Machin<br>Jeremy Fagg
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">3.15</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.55</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade f-1" id="l1t11" role="tabpanel">
+                <div class="accordion accord-11">
+                  <div class="card">
+                    <div class="btn text-left card-header f-1" id="a11h1" data-toggle="collapse" data-target="#a11c1" aria-expanded="true" aria-controls="a11c1">
+                      World Championship 2021- Winner 17/06 | 15:00
+                      <span class="badge badge-primary badge-pill">4</span>
+                    </div>
+                    <div id="a11c1" class="collapse show f-2" aria-labelledby="a11h1">
+                      <div class="card-body p-0 pt-1 pb-1">
+                        <div class="row m-0 p-3">
+                          <div class="w-100">
+                            Denmark
+                            <span class="font-weight-bold float-right">1.90</span>
+                          </div>
+                        </div>
+                        <div class="row m-0 p-3">
+                          <div class="w-100">
+                            Spain
+                            <span class="font-weight-bold float-right">5.00</span>
+                          </div>
+                        </div>
+                        <div class="row m-0 p-3">
+                          <div class="w-100">
+                            France
+                            <span class="font-weight-bold float-right">8.00</span>
+                          </div>
+                        </div>
+                        <div class="row m-0 p-3">
+                          <div class="w-100">
+                            Norway
+                            <span class="font-weight-bold float-right">15.00</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade f-1" id="l1t12" role="tabpanel">
+                <div class="accordion accord-12">
+                  <div class="card">
+                    <div class="btn text-left card-header f-1" id="a12h1" data-toggle="collapse" data-target="#a12c1" aria-expanded="true" aria-controls="a12c1">
+                      South Korean KBO League
+                      <span class="badge badge-primary badge-pill">2</span>
+                    </div>
+                    <div id="a12c1" class="collapse show f-2" aria-labelledby="a12h1">
+                      <div class="card-body">
+                        <div class="item">
+                          <div class="row pb-1 pl-2 pr-2">
+                            <p class="w-100 m-0">
+                              NC Dinos<br>Doosan Bears
+                            </p>
+                            <p class="text-right text-muted w-100 m-0 f-3">
+                              02/06 00:00
+                            </p>
+                          </div>
+                          <div class="row pb-1 c-table">
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Run Line</p>
+                              <p class="text-right">
+                                <span class="float-left">+1.5</span>
+                                <span class="font-weight-bold">1.72</span>
+                              </p>
+                              <p class="text-right">
+                                <span class="float-left">-1.5</span>
+                                <span class="font-weight-bold">2.02</span>
+                              </p>
+                            </div>
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Money Line</p>
+                              <p class="text-right">
+                                <span class="float-left">1</span>
+                                <span class="font-weight-bold">2.15</span>
+                              </p>
+                              <p class="text-right">
+                                <span class="float-left">1</span>
+                                <span class="font-weight-bold">1.64</span>
+                              </p>
+                            </div>
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Total</p>
+                              <p class="text-right">
+                                <span class="float-left">O 11</span>
+                                <span class="font-weight-bold">1.80</span>
+                              </p>
+                              <p class="text-right">
+                                <span class="float-left">O 11</span>
+                                <span class="font-weight-bold">1.91</span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="row pb-1 pl-2 pr-2">
+                            <p class="w-100 m-0">
+                              Samsung Lions<br>Kiwoon Heroes
+                            </p>
+                            <p class="text-right text-muted w-100 m-0 f-3">
+                              02/06 00:00
+                            </p>
+                          </div>
+                          <div class="row pb-1 c-table">
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Run Line</p>
+                              <p class="text-right">
+                                <span class="float-left">+1.5</span>
+                                <span class="font-weight-bold">1.72</span>
+                              </p>
+                              <p class="text-right">
+                                <span class="float-left">-1.5</span>
+                                <span class="font-weight-bold">2.02</span>
+                              </p>
+                            </div>
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Money Line</p>
+                              <p class="text-right">
+                                <span class="float-left">1</span>
+                                <span class="font-weight-bold">2.15</span>
+                              </p>
+                              <p class="text-right">
+                                <span class="float-left">1</span>
+                                <span class="font-weight-bold">1.64</span>
+                              </p>
+                            </div>
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Total</p>
+                              <p class="text-right">
+                                <span class="float-left">O 11</span>
+                                <span class="font-weight-bold">1.80</span>
+                              </p>
+                              <p class="text-right">
+                                <span class="float-left">O 11</span>
+                                <span class="font-weight-bold">1.91</span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="btn text-left card-header f-1" id="a12h2" data-toggle="collapse" data-target="#a12c2" aria-expanded="true" aria-controls="a12c2">
+                      Taiwan CPBL
+                      <span class="badge badge-primary badge-pill">1</span>
+                    </div>
+                    <div id="a12c2" class="collapse show f-2" aria-labelledby="a12h2">
+                      <div class="card-body">
+                        <div class="item">
+                          <div class="row pb-1 pl-2 pr-2">
+                            <p class="w-100 m-0">
+                              CITIC Brothers<br>Fubon Guardians
+                            </p>
+                            <p class="text-right text-muted w-100 m-0 f-3">
+                              02/06 00:00
+                            </p>
+                          </div>
+                          <div class="row pb-1 c-table">
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Run Line</p>
+                              <p class="text-right">
+                                <span class="float-left">+1.5</span>
+                                <span class="font-weight-bold">1.72</span>
+                              </p>
+                              <p class="text-right">
+                                <span class="float-left">-1.5</span>
+                                <span class="font-weight-bold">2.02</span>
+                              </p>
+                            </div>
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Money Line</p>
+                              <p class="text-right">
+                                <span class="float-left">1</span>
+                                <span class="font-weight-bold">2.15</span>
+                              </p>
+                              <p class="text-right">
+                                <span class="float-left">1</span>
+                                <span class="font-weight-bold">1.64</span>
+                              </p>
+                            </div>
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Total</p>
+                              <p class="text-right">
+                                <span class="float-left">O 11</span>
+                                <span class="font-weight-bold">1.80</span>
+                              </p>
+                              <p class="text-right">
+                                <span class="float-left">O 11</span>
+                                <span class="font-weight-bold">1.91</span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade f-1" id="l1t13" role="tabpanel">
+                <div class="accordion accord-13">
+                  <div class="card">
+                    <div class="btn text-left card-header f-1" id="a13h1" data-toggle="collapse" data-target="#a13c1" aria-expanded="true" aria-controls="a13c1">
+                      Tour de France 2020 - Winner (Must be Played in 2020) - EW 1/4 1-2-3 29/08 | 17:00
+                      <span class="badge badge-primary badge-pill">4</span>
+                    </div>
+                    <div id="a13c1" class="collapse show f-2" aria-labelledby="a13h1">
+                      <div class="card-body p-0 pt-1 pb-1">
+                        <div class="row m-0 p-3">
+                          <div class="w-100">
+                            Egan Bernal
+                            <span class="font-weight-bold float-right">3.25</span>
+                          </div>
+                        </div>
+                        <div class="row m-0 p-3">
+                          <div class="w-100">
+                            Primoz Roglic
+                            <span class="font-weight-bold float-right">6.00</span>
+                          </div>
+                        </div>
+                        <div class="row m-0 p-3">
+                          <div class="w-100">
+                            Thibaut Pinot
+                            <span class="font-weight-bold float-right">7.00</span>
+                          </div>
+                        </div>
+                        <div class="row m-0 p-3">
+                          <div class="w-100">
+                            Chris Froome
+                            <span class="font-weight-bold float-right">7.00</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade f-1" id="l1t14" role="tabpanel">
+                <div class="accordion accord-14">
+                  <div class="card">
+                    <div class="btn text-left card-header f-1" id="a14h1" data-toggle="collapse" data-target="#a14c1" aria-expanded="true" aria-controls="a14c1">
+                      Russia Short Hockey [3x10 min, Excluding OT]
+                      <span class="badge badge-primary badge-pill">2</span>
+                    </div>
+                    <div id="a14c1" class="collapse show f-2" aria-labelledby="a14h1">
+                      <div class="card-body">
+                        <div class="item">
+                          <div class="row pb-1 pl-2 pr-2">
+                            <p class="w-100 m-0">
+                              Ershistyye Tigry<br>Stalker
+                            </p>
+                            <p class="text-right text-muted w-100 m-0 f-3">
+                              02/06 00:00
+                            </p>
+                          </div>
+                          <div class="row pb-1 c-table">
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Spread</p>
+                            </div>
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Winner</p>
+                              <p class="text-right">
+                                <span class="float-left">1</span>
+                                <span class="font-weight-bold">2.40</span>
+                              </p>
+                              <p class="text-right">
+                                <span class="float-left">2</span>
+                                <span class="font-weight-bold">2.00</span>
+                              </p>
+                              <p class="text-right">
+                                <span class="float-left">X</span>
+                                <span class="font-weight-bold">5.15</span>
+                              </p>
+                            </div>
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Over/Under</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="row pb-1 pl-2 pr-2">
+                            <p class="w-100 m-0">
+                              Krasniye Krilya<br>Ledoviy Desant
+                            </p>
+                            <p class="text-right text-muted w-100 m-0 f-3">
+                              02/06 00:00
+                            </p>
+                          </div>
+                          <div class="row pb-1 c-table">
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Spread</p>
+                            </div>
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Winner</p>
+                              <p class="text-right">
+                                <span class="float-left">1</span>
+                                <span class="font-weight-bold">2.40</span>
+                              </p>
+                              <p class="text-right">
+                                <span class="float-left">2</span>
+                                <span class="font-weight-bold">2.00</span>
+                              </p>
+                              <p class="text-right">
+                                <span class="float-left">X</span>
+                                <span class="font-weight-bold">5.15</span>
+                              </p>
+                            </div>
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Over/Under</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="btn text-left card-header f-1" id="a14h2" data-toggle="collapse" data-target="#a14c2" aria-expanded="true" aria-controls="a14c2">
+                      Ice Cup Ease [3x10, Excluding OT]
+                      <span class="badge badge-primary badge-pill">6</span>
+                    </div>
+                    <div id="a14c2" class="collapse show f-2" aria-labelledby="a14h2">
+                      <div class="card-body">
+                        <div class="item">
+                          <div class="row pb-1 pl-2 pr-2">
+                            <p class="w-100 m-0">
+                              akbars<br>Metallurg
+                            </p>
+                            <p class="text-right text-muted w-100 m-0 f-3">
+                              02/06 00:00
+                            </p>
+                          </div>
+                          <div class="row pb-1 c-table">
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Spread</p>
+                            </div>
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Winner</p>
+                              <p class="text-right">
+                                <span class="float-left">1</span>
+                                <span class="font-weight-bold">2.40</span>
+                              </p>
+                              <p class="text-right">
+                                <span class="float-left">2</span>
+                                <span class="font-weight-bold">2.00</span>
+                              </p>
+                              <p class="text-right">
+                                <span class="float-left">X</span>
+                                <span class="font-weight-bold">5.15</span>
+                              </p>
+                            </div>
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Over/Under</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="row pb-1 pl-2 pr-2">
+                            <p class="w-100 m-0">
+                              Metallurg<br>akbars
+                            </p>
+                            <p class="text-right text-muted w-100 m-0 f-3">
+                              02/06 00:00
+                            </p>
+                          </div>
+                          <div class="row pb-1 c-table">
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Spread</p>
+                            </div>
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Winner</p>
+                              <p class="text-right">
+                                <span class="float-left">1</span>
+                                <span class="font-weight-bold">2.40</span>
+                              </p>
+                              <p class="text-right">
+                                <span class="float-left">2</span>
+                                <span class="font-weight-bold">2.00</span>
+                              </p>
+                              <p class="text-right">
+                                <span class="float-left">X</span>
+                                <span class="font-weight-bold">5.15</span>
+                              </p>
+                            </div>
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Over/Under</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="row pb-1 pl-2 pr-2">
+                            <p class="w-100 m-0">
+                              Amur Khabarovsk<br>Metallurg
+                            </p>
+                            <p class="text-right text-muted w-100 m-0 f-3">
+                              02/06 00:00
+                            </p>
+                          </div>
+                          <div class="row pb-1 c-table">
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Spread</p>
+                            </div>
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Winner</p>
+                              <p class="text-right">
+                                <span class="float-left">1</span>
+                                <span class="font-weight-bold">2.40</span>
+                              </p>
+                              <p class="text-right">
+                                <span class="float-left">2</span>
+                                <span class="font-weight-bold">2.00</span>
+                              </p>
+                              <p class="text-right">
+                                <span class="float-left">X</span>
+                                <span class="font-weight-bold">5.15</span>
+                              </p>
+                            </div>
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Over/Under</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="row pb-1 pl-2 pr-2">
+                            <p class="w-100 m-0">
+                              Metallurg<br>Amur Khabarovsk
+                            </p>
+                            <p class="text-right text-muted w-100 m-0 f-3">
+                              02/06 00:00
+                            </p>
+                          </div>
+                          <div class="row pb-1 c-table">
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Spread</p>
+                            </div>
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Winner</p>
+                              <p class="text-right">
+                                <span class="float-left">1</span>
+                                <span class="font-weight-bold">2.40</span>
+                              </p>
+                              <p class="text-right">
+                                <span class="float-left">2</span>
+                                <span class="font-weight-bold">2.00</span>
+                              </p>
+                              <p class="text-right">
+                                <span class="float-left">X</span>
+                                <span class="font-weight-bold">5.15</span>
+                              </p>
+                            </div>
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Over/Under</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="row pb-1 pl-2 pr-2">
+                            <p class="w-100 m-0">
+                              akbars<br>Amur Khabarovsk
+                            </p>
+                            <p class="text-right text-muted w-100 m-0 f-3">
+                              02/06 00:00
+                            </p>
+                          </div>
+                          <div class="row pb-1 c-table">
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Spread</p>
+                            </div>
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Winner</p>
+                              <p class="text-right">
+                                <span class="float-left">1</span>
+                                <span class="font-weight-bold">2.40</span>
+                              </p>
+                              <p class="text-right">
+                                <span class="float-left">2</span>
+                                <span class="font-weight-bold">2.00</span>
+                              </p>
+                              <p class="text-right">
+                                <span class="float-left">X</span>
+                                <span class="font-weight-bold">5.15</span>
+                              </p>
+                            </div>
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Over/Under</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="row pb-1 pl-2 pr-2">
+                            <p class="w-100 m-0">
+                              Amur Khabarovsk<br>akbars
+                            </p>
+                            <p class="text-right text-muted w-100 m-0 f-3">
+                              02/06 00:00
+                            </p>
+                          </div>
+                          <div class="row pb-1 c-table">
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Spread</p>
+                            </div>
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Winner</p>
+                              <p class="text-right">
+                                <span class="float-left">1</span>
+                                <span class="font-weight-bold">2.40</span>
+                              </p>
+                              <p class="text-right">
+                                <span class="float-left">2</span>
+                                <span class="font-weight-bold">2.00</span>
+                              </p>
+                              <p class="text-right">
+                                <span class="float-left">X</span>
+                                <span class="font-weight-bold">5.15</span>
+                              </p>
+                            </div>
+                            <div class="col text-center pl-1 pr-1">
+                              <p class="text-muted f-4">Over/Under</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade f-1" id="l1t15" role="tabpanel">
+                <div class="accordion accord-15">
+                  <div class="card">
+                    <div class="btn text-left card-header f-1" id="a15h1" data-toggle="collapse" data-target="#a15c1" aria-expanded="true" aria-controls="a15c1">
+                      Britains Got Talent 2020 - Winner 21/06 | 02:00
+                      <span class="badge badge-primary badge-pill">4</span>
+                    </div>
+                    <div id="a15c1" class="collapse show f-2" aria-labelledby="a15h1">
+                      <div class="card-body p-0 pt-1 pb-1">
+                        <div class="row m-0 p-3">
+                          <div class="w-100">
+                            Beth Porch
+                            <span class="font-weight-bold float-right">1.90</span>
+                          </div>
+                        </div>
+                        <div class="row m-0 p-3">
+                          <div class="w-100">
+                            Sign Along With Us
+                            <span class="font-weight-bold float-right">5.00</span>
+                          </div>
+                        </div>
+                        <div class="row m-0 p-3">
+                          <div class="w-100">
+                            Sirine Jahangir
+                            <span class="font-weight-bold float-right">8.00</span>
+                          </div>
+                        </div>
+                        <div class="row m-0 p-3">
+                          <div class="w-100">
+                            Fayth Ifil
+                            <span class="font-weight-bold float-right">15.00</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade f-1" id="l1t16" role="tabpanel">
+                <div class="accordion accord-16">
+                  <div class="card">
+                    <div class="btn text-left card-header f-1" id="a16h1" data-toggle="collapse" data-target="#a16c1" aria-expanded="true" aria-controls="a16c1">
+                      Denmark - Superligaen
+                      <span class="badge badge-primary badge-pill">2</span>
+                    </div>
+                    <div id="a16c1" class="collapse show f-2" aria-labelledby="a16h1">
+                      <div class="card-body p-0 pt-1 pb-1">
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-6 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Esbjerg Randers FC
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">X</p>
+                            <p class="m-0 font-weight-bold">3.25</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-6 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Hobro AC Horsens
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">X</p>
+                            <p class="m-0 font-weight-bold">3.25</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="btn text-left card-header f-1" id="a16h2" data-toggle="collapse" data-target="#a16c2" aria-expanded="true" aria-controls="a16c2">
+                      Spain - La Liga
+                      <span class="badge badge-primary badge-pill">4</span>
+                    </div>
+                    <div id="a16c2" class="collapse show f-2" aria-labelledby="a16h2">
+                      <div class="card-body p-0 pt-1 pb-1">
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-6 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">13/06</span>
+                                <span class="event-time">01:30</span>
+                              </div>
+                              <div class="col p-0">
+                                Granada CF Getafe
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">3.15</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">X</p>
+                            <p class="m-0 font-weight-bold">2.95</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.55</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-6 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Valencia Levante
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">X</p>
+                            <p class="m-0 font-weight-bold">3.25</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-6 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Espanyol Alaves
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">X</p>
+                            <p class="m-0 font-weight-bold">3.25</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-6 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Celta Vigo Villarreal
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">X</p>
+                            <p class="m-0 font-weight-bold">3.25</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="btn text-left card-header f-1" id="a16h3" data-toggle="collapse" data-target="#a16c3" aria-expanded="true" aria-controls="a16c3">
+                      Coppa Italia
+                      <span class="badge badge-primary badge-pill">1</span>
+                    </div>
+                    <div id="a16c3" class="collapse show f-2" aria-labelledby="a16h3">
+                      <div class="card-body p-0 pt-1 pb-1">
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-6 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Juventus AC Milan
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">X</p>
+                            <p class="m-0 font-weight-bold">3.25</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="btn text-left card-header f-1" id="a16h4" data-toggle="collapse" data-target="#a16c4" aria-expanded="true" aria-controls="a16c4">
+                      Croatia - 1.HNL
+                      <span class="badge badge-primary badge-pill">2</span>
+                    </div>
+                    <div id="a16c4" class="collapse show f-2" aria-labelledby="a16h4">
+                      <div class="card-body p-0 pt-1 pb-1">
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-6 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                NK Varazdin Rijeka
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">X</p>
+                            <p class="m-0 font-weight-bold">3.25</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-6 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Lokomotiva Zagreb Dinamo Zagreb
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">X</p>
+                            <p class="m-0 font-weight-bold">3.25</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="btn text-left card-header f-1" id="a16h5" data-toggle="collapse" data-target="#a16c5" aria-expanded="true" aria-controls="a16c5">
+                      Czech Republic
+                      <span class="badge badge-primary badge-pill">1</span>
+                    </div>
+                    <div id="a16c5" class="collapse show f-2" aria-labelledby="a16h5">
+                      <div class="card-body p-0 pt-1 pb-1">
+                        <div class="row m-0 pt-2 pb-2">
+                          <div class="col-6 pl-0 pr-1">
+                            <div class="row m-0">
+                              <div class="col-4 text-center p-0">
+                                <span class="event-day">02/06</span>
+                                <span class="event-time">00:00</span>
+                              </div>
+                              <div class="col p-0">
+                                Pardobice Slovan Varnsdorf
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">1</p>
+                            <p class="m-0 font-weight-bold">2.35</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">X</p>
+                            <p class="m-0 font-weight-bold">3.25</p>
+                          </div>
+                          <div class="col text-center border-left">
+                            <p class="m-0 f-5">2</p>
+                            <p class="m-0 font-weight-bold">2.65</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="control">
+      <script src="js/component/user-control.js"></script>
+    </div>
+  </div>
+
+  <script src="js/functions.js"></script>
+  <!--  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>-->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
