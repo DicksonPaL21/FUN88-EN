@@ -1,0 +1,52 @@
+.icon8 {
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  min-width: 24px;
+  height: 24px;
+}
+
+.icon8.sport {
+  background: url('../img/icon/sidebar/trophy.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.btn:hover > .icon8.sport,
+.btn.active > .icon8.sport {
+  background: url('../img/icon/sidebar/trophy-filled.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon8.live {
+  background: url('../img/icon/sidebar/broadcast.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.btn:hover > .icon8.live,
+.btn.active > .icon8.live {
+  background: url('../img/icon/sidebar/broadcast-filled.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon8.casino {
+  background: url('../img/icon/sidebar/cards.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.btn:hover > .icon8.casino,
+.btn.active > .icon8.casino {
+  background: url('../img/icon/sidebar/cards-filled.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

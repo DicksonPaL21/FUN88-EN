@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+  <!--  <meta name="theme-color" content="" />-->
+
+  <link rel="icon" type="image/png" href="../img/icon/logo.png" />
+
+  <title>FUN88 Sportsbook &amp; Casino</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- fontawesome Icon-->
+  <script src="https://kit.fontawesome.com/a8c2f6ec30.js"></script>
+  <!-- JQuery 3.4.1 -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+  <!--  <script src="https://kit.fontawesome.com/df3fec80dc.js"></script>-->
+  <script type="text/javascript" src="../js/config.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content y-scroll sb-0">
+      <header>
+        <script src="../js/component/header.js"></script>
+        <script src="../js/component/sidenav.js"></script>
+      </header>
+      <section>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb" style="border-radius: 0px; margin-bottom: 0">
+            <li class="breadcrumb-item f-1"><a href="#">Home</a></li>
+            <li class="breadcrumb-item f-1 active" aria-current="page">Casino</li>
+          </ol>
+        </nav>
+        <div class="container">
+          <div class="row">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../img/casino/21495.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="../img/casino/21495.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+            <div class="search-con">
+              <div class="search-bar">
+                <i class="fas fa-search" style="margin-top:13px;"></i>
+              </div>
+            </div>
+            <div class="game-con col-12">
+              <div class="row p-3">
+                <div class="col-6">
+                  <div class="title-game">
+                    <h2 class="f-1">Popular Slots (12)</h2>
+                  </div>
+                </div>
+                <div class="col-6 pr-0">
+                  <div class="show-game float-right">
+                    <button type="button" class="show-all btn btn-success f-2" onclick="ani()">Show All Games</button>
+                  </div>
+                </div>
+              </div>
+              <div id="carouselExampleControls" class="carousel slide" data-interval="false" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="container-fluid p-0">
+                      <div class="row no-gutters w-100">
+                        <div class="col-8">
+                          <img src="../img/casino/slot1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-4 p-0">
+                          <div class="col-12 p-0">
+                            <img src="../img/casino/slot2.png" alt="" class="img-fluid">
+                          </div>
+                          <div class="col-12 p-0">
+                            <img src="../img/casino/slot3.png" alt="" class="img-fluid">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="container-fluid p-0">
+                      <div class="row no-gutters w-100">
+                        <div class="col-4">
+                          <img src="../img/casino/slot4.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-4">
+                          <img src="../img/casino/slot5.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-4">
+                          <img src="../img/casino/slot6.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-4">
+                          <img src="../img/casino/slot7.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-4">
+                          <img src="../img/casino/slot8.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-4">
+                          <img src="../img/casino/slot9.png" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="container-fluid p-0">
+                      <div class="row no-gutters w-100">
+                        <div class="col-4">
+                          <img src="../img/casino/slot4.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-4">
+                          <img src="../img/casino/slot5.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-4">
+                          <img src="../img/casino/slot6.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-4">
+                          <img src="../img/casino/blank.png" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev games" id="prev-btn" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <i class="control-carousels fas fa-chevron-left"></i>
+                </a>
+                <a class="carousel-control-next" id="next-btn" href="#carouselExampleControls" role="button" data-slide="next">
+                  <i class="control-carousels fas fa-chevron-right"></i>
+                </a>
+                <div class="mystyle" id="Addclass">
+                  <span class="overlay-page" id="overlay-page">1 of 3</span>
+                </div>
+              </div>
+              <div class="container-ani" id="btn-fade">
+                <div class="row no-gutters">
+                  <div class="col-4">
+                    <img src="../img/casino/slot2.png" alt="" class="img-fluid show-animate">
+                  </div>
+                  <div class="col-4">
+                    <img src="../img/casino/slot2.png" alt="" class="img-fluid show-animate1">
+                  </div>
+                  <div class="col-4">
+                    <img src="../img/casino/slot2.png" alt="" class="img-fluid show-animate2">
+                  </div>
+                  <div class="col-4">
+                    <img src="../img/casino/slot2.png" alt="" class="img-fluid show-animate3">
+                  </div>
+                  <div class="col-4">
+                    <img src="../img/casino/slot2.png" alt="" class="img-fluid show-animate4">
+                  </div>
+                  <div class="col-4">
+                    <img src="../img/casino/slot2.png" alt="" class="img-fluid show-animate5">
+                  </div>
+                  <div class="po">
+                    <a class="link-more show-animate5 f-3" onclick="moreGame()" id="show-more">show more</a>
+                  </div>
+                  <div class="game-edi" id="game-edi">
+                    <div class="row no-gutters">
+                      <div class="col-4">
+                        <img src="../img/casino/slot2.png" alt="" class="img-fluid">
+                      </div>
+                      <div class="col-4">
+                        <img src="../img/casino/slot2.png" alt="" class="img-fluid">
+                      </div>
+                      <div class="col-4">
+                        <img src="../img/casino/slot2.png" alt="" class="img-fluid">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="login-con">
+                <button type="button" class="login-play btn btn-info title">LOGIN TO PLAY</button>
+              </div>
+              <div class="row p-3">
+                <div class="col-6">
+                  <div class="title-game">
+                    <h2 class="f-1">Popular Slots (12)</h2>
+                  </div>
+                </div>
+                <div class="col-6 pr-0">
+                  <div class="show-game float-right">
+                    <button type="button" class="show-all btn btn-success f-2" onclick="ani1()">Show All Games</button>
+                  </div>
+                </div>
+              </div>
+              <div id="carouselExampleControls2nd" class="carousel slide" data-interval="false" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="container-fluid p-0">
+                      <div class="row no-gutters w-100">
+                        <div class="col-8">
+                          <img src="../img/casino/slot1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-4 p-0">
+                          <div class="col-12 p-0">
+                            <img src="../img/casino/slot2.png" alt="" class="img-fluid">
+                          </div>
+                          <div class="col-12 p-0">
+                            <img src="../img/casino/slot3.png" alt="" class="img-fluid">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="container-fluid p-0">
+                      <div class="row no-gutters w-100">
+                        <div class="col-4">
+                          <img src="../img/casino/slot4.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-4">
+                          <img src="../img/casino/slot5.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-4">
+                          <img src="../img/casino/slot6.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-4">
+                          <img src="../img/casino/slot7.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-4">
+                          <img src="../img/casino/slot8.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-4">
+                          <img src="../img/casino/slot9.png" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="container-fluid p-0">
+                      <div class="row no-gutters w-100">
+                        <div class="col-4">
+                          <img src="../img/casino/slot4.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-4">
+                          <img src="../img/casino/slot5.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-4">
+                          <img src="../img/casino/slot6.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-4">
+                          <img src="../img/casino/blank.png" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev games" id="prev-btn1" href="#carouselExampleControls2nd" role="button" data-slide="prev">
+                  <i class="control-carousels fas fa-chevron-left"></i>
+                </a>
+                <a class="carousel-control-next" id="next-btn1" href="#carouselExampleControls2nd" role="button" data-slide="next">
+                  <i class="control-carousels fas fa-chevron-right"></i>
+                </a>
+                <div class="mystyle" id="Addclass">
+                  <span class="overlay-page" id="overlay-page1">1 of 3</span>
+                </div>
+              </div>
+              <div class="container-ani" id="btn-fade1">
+                <div class="row no-gutters">
+                  <div class="col-4">
+                    <img src="../img/casino/slot2.png" alt="" class="img-fluid show-animate">
+                  </div>
+                  <div class="col-4">
+                    <img src="../img/casino/slot2.png" alt="" class="img-fluid show-animate1">
+                  </div>
+                  <div class="col-4">
+                    <img src="../img/casino/slot2.png" alt="" class="img-fluid show-animate2">
+                  </div>
+                  <div class="col-4">
+                    <img src="../img/casino/slot2.png" alt="" class="img-fluid show-animate3">
+                  </div>
+                  <div class="col-4">
+                    <img src="../img/casino/slot2.png" alt="" class="img-fluid show-animate4">
+                  </div>
+                  <div class="col-4">
+                    <img src="../img/casino/slot2.png" alt="" class="img-fluid show-animate5">
+                  </div>
+                  <div class="po">
+                    <a class="link-more show-animate5 f-3" onclick="moreGame()" id="show-more1">show more</a>
+                  </div>
+                  <div class="game-edi" id="game-edi1">
+                    <div class="row no-gutters">
+                      <div class="col-4">
+                        <img src="../img/casino/slot2.png" alt="" class="img-fluid">
+                      </div>
+                      <div class="col-4">
+                        <img src="../img/casino/slot2.png" alt="" class="img-fluid">
+                      </div>
+                      <div class="col-4">
+                        <img src="../img/casino/slot2.png" alt="" class="img-fluid">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12" style="padding:0 30px;">
+              <p class="text-dark text-center text-uppercase title mt-4">
+                The Best UK Online Casino
+              </p>
+              <p class="text-justify f-1">
+                Welcome to the glitz and glamour of the Fun88 online casino!
+                Here you can choose from a wide array of super slots and jackpots,
+                video poker and all the casino classics, like roulette, craps,
+                blackjack, baccarat and more.
+              </p>
+              <h2 class="font-weight-bold text-primary f-1">PLAY THE BEST ONLINE CASINO GAMES</h2>
+              <p class="text-justify f-1">
+                Fun88 strives to provide a superior gaming experience,
+                specialising in premium online casino entertainment in
+                the UK (and abroad). The gambling gallery is intuitively
+                laid out, with Popular Slots, Jackpots, Video Slots, Table
+                and Card Game categories – not to mention our Live Casino offering.
+                Up the ante and play for real money or test it out and hone your
+                skills with a demo version casino game. The gallery is jam-packed
+                with high quality games from the world’s best software providers including;
+              </p>
+              <ul class="bullet-circle p-3 f-1">
+                <li>Microgaming</li>
+                <li>JFTW</li>
+                <li>PlayNGo</li>
+                <li>2By2</li>
+                <li>Skill Games</li>
+                <li>And many more</li>
+              </ul>
+              <p class="text-justify f-1">Not only do we offer a wide selection of casino games, gaming categories and a constant slew of new additions, but we empower our customers with the ability to adjust their wagers and customise their gameplay. Nowhere else will you find
+                better choices and greater gambling options! <a style="color: #25aae1;" href="https://www.fun88.co.uk/promotions-casino/casino-sign-up/">Sign Up</a>, deposit money and manage your account <a style="color: #25aae1;" href="https://www.fun88.co.uk/safeandsecure/">Safe &amp; Securely</a>. We prioritise safety, usability and a gratifying user experience, even before the fun begins! You can also take advantage of the best online casino UK bonuses and <a style="color: #25aae1;" href="https://www.fun88.co.uk/promotions-casino/">Promotions</a> in town. Upon winning, your money will almost instantly reflect in your account for a fuss-free and fast but secure withdrawal process.
+              </p>
+              <p class="text-justify f-1">The <span style="color: #25aae1;"><strong>Fun88</strong></span> Online Casino game categories include;</p>
+              <h2 class="font-weight-bold text-primary f-1">JACKPOTS SLOTS</h2>
+              <p class="text-justify f-1">Are you ready to up the ante on the online casino action? Well, Fun88 has a whole host of jackpot slots with bigger stakes, more excitement and more opportunities to go for gold. With each player, the earnings build and build until one
+                lucky recipient claims the grand prize. From the classics like 3-reel Cash Splash and 5-reel Fruit Fiesta, to the massive potential winnings of Mega Moolah, our progressive jackpot slot games are for those who like to take risks and reap
+                the rewards.</p>
+              <h2 class="font-weight-bold text-primary f-1">PLAY VIDEO POKER</h2>
+              <p class="text-justify f-1">Enjoy the royal treatment (and hopefully a royal flush while you’re at it) with Fun88’s selection of high-quality video poker games. Whether it’s the ever-popular Deuces Wild, or the high RTP of Cyberstud Progressive Poker, you’re bound
+                to find the right game for your specific preferences. Selections range from poker themed games, such as Jackpot Poker to advanced video poker strategy tournaments, such as Casino Stud Poker.</p>
+              <h2 class="font-weight-bold text-primary f-1">ONLINE TABLE GAMES</h2>
+              <p class="text-justify f-1">Indulge in the class of the online casino with our tantalising table games. Take a chance on the ‘little wheel’ with American, European and Live roulette selections. Follow our expert tips to get to grips with the odds and to hone your
+                roulette strategy skills. Why not roll the dice with a round at the craps table? Our casino game variations, excellent odds and craps strategies can serve as a gambling guide. Fun88 also offers a wide variety of card game options, such as
+                Jacks or Better, Black Jack Single Deck, High Limit Baccarat, the Atlantic City Gold Series and more. Find all the blackjack rules and top-notch baccarat strategy tips right here.</p>
+              <p class="text-justify f-1">If you’re looking for the best in online casino UK entertainment, high <a style="color: #25aae1;" href="https://www.fun88.co.uk/rtp/">RTPs</a> and gratifying gameplay, look no further than Fun88.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="control">
+      <script src="../js/component/user-control.js"></script>
+    </div>
+  </div>
+
+  <script src="../js/functions.js"></script>
+  <!--  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>-->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript">
+    function ani() {
+
+      var x = document.getElementById("btn-fade");
+      var i = document.getElementById("show-more");
+      var y = document.getElementById("game-edi");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+
+      } else {
+        x.style.display = "none";
+        i.style.display = "block";
+        y.style.display = "none";
+      }
+    }
+
+    function moreGame() {
+      var y = document.getElementById("game-edi");
+      y.style.display = "block";
+      var i = document.getElementById("show-more");
+      i.style.display = "none";
+    }
+
+    var next = document.getElementById("next-btn");
+    var count = 0;
+    var prev = document.getElementById("prev-btn");
+    var overlayPage = document.getElementById("overlay-page");
+    prev.style.visibility = "hidden";
+    var myVar;
+
+    next.onclick = function() {
+      count += 1;
+      if (count == 1) {
+        overlayPage.innerHTML = "2 of 3";
+        overlayPage.style.opacity = "1";
+        prev.style.visibility = "visible";
+        // console.log(count);
+        myVar = setTimeout(overlay, 1300);
+
+      }
+      if (count == 2) {
+        overlayPage.innerHTML = "3 of 3";
+        count = 0;
+        next.style.visibility = "hidden";
+        prev.style.visibility = "visible";
+        overlayPage.style.opacity = "1";
+        myVar = setTimeout(overlay, 1300);
+        // console.log(count);
+
+      }
+    };
+    prev.onclick = function() {
+      count += 1;
+      if (count == 1) {
+        overlayPage.innerHTML = "2 of 3";
+        overlayPage.style.opacity = "1";
+        next.style.visibility = "visible";
+        myVar = setTimeout(overlay, 1300);
+        console.log(count);
+      }
+      if (count == 2) {
+        overlayPage.innerHTML = "1 of 3";
+        overlayPage.style.opacity = "1";
+        count = 0;
+        next.style.visibility = "visible";
+        prev.style.visibility = "hidden";
+        myVar = setTimeout(overlay, 1300);
+        console.log(count);
+      }
+
+    };
+
+    var next1 = document.getElementById("next-btn1");
+    var count1 = 0;
+    var prev1 = document.getElementById("prev-btn1");
+    var overlayPage1 = document.getElementById("overlay-page1");
+    prev1.style.visibility = "hidden";
+
+
+    next1.onclick = function() {
+      count1 += 1;
+      if (count1 == 1) {
+        overlayPage1.innerHTML = "2 of 3";
+        overlayPage1.style.opacity = "1";
+        prev1.style.visibility = "visible";
+        myVar = setTimeout(overlay1, 1300);
+        console.log(count1);
+
+
+      }
+      if (count1 == 2) {
+        overlayPage1.innerHTML = "3 of 3";
+        count1 = 0;
+        next1.style.visibility = "hidden";
+        prev1.style.visibility = "visible";
+        overlayPage1.style.opacity = "1";
+        myVar = setTimeout(overlay1, 1300);
+        console.log(count1);
+
+      }
+    };
+    prev1.onclick = function() {
+      count1 += 1;
+      if (count1 == 1) {
+        overlayPage1.innerHTML = "2 of 3";
+        overlayPage1.style.opacity = "1";
+        next1.style.visibility = "visible";
+        myVar = setTimeout(overlay1, 1300);
+      }
+      if (count1 == 2) {
+        overlayPage1.innerHTML = "1 of 3";
+        overlayPage1.style.opacity = "1";
+        count1 = 0;
+        next1.style.visibility = "visible";
+        prev1.style.visibility = "hidden";
+        myVar = setTimeout(overlay1, 1300);
+      }
+
+    };
+
+    function moreGame() {
+      var y = document.getElementById("game-edi1");
+      y.style.display = "block";
+      var i = document.getElementById("show-more1");
+      i.style.display = "none";
+    }
+
+    function ani1() {
+
+      var x = document.getElementById("btn-fade1");
+      var i = document.getElementById("show-more1");
+      var y = document.getElementById("game-edi1");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+
+      } else {
+        x.style.display = "none";
+        i.style.display = "block";
+        y.style.display = "none";
+      }
+    }
+
+    function overlay() {
+      overlayPage.style.opacity = "0";
+    }
+
+    function overlay1() {
+      overlayPage1.style.opacity = "0";
+    }
+  </script>
+</body>
+
+</html>

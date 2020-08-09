@@ -1,0 +1,176 @@
+@import url('icon8.css');
+
+:root {
+  --sidebar-width: 220px;
+}
+
+#ctrl-tab {
+  width: var(--sidebar-width);
+  background: #323639;
+}
+
+#ctrl-tab .btn > p {
+  color: #6c757d;
+}
+
+#ctrl-tab .btn.active > p {
+  color: #E9ECEF;
+}
+
+#ctrl-tab .btn.active::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: #444749;
+  transform: translateX(-50%) rotate(45deg);
+  bottom: -14px;
+  left: 50%;
+}
+
+.overlay {
+  opacity: 0;
+  z-index: 10;
+  visibility: hidden;
+  background: rgba(39, 42, 43, 0.8);
+  transition: opacity 0.2s ease-in-out;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#sidebar {
+  width: 0;
+  height: 100%;
+  transition: 0.5s ease-in-out;
+  background-color: #444749;
+  -moz-box-shadow: 4px 0px 6px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 4px 0px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 0px 6px rgba(0, 0, 0, 0.4);
+  overflow-x: hidden;
+  position: fixed;
+  display: block;
+  top: 0;
+}
+
+#sidebar .sidebar-brand {
+  font-size: 24px;
+  width: var(--sidebar-width);
+  text-align: left;
+}
+
+#sidebar .sidebar-brand img {
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  background: #4F5D73;
+  overflow: hidden;
+}
+
+#sidebar .sidebar-brand label {
+  color: #fff;
+  margin: 0;
+}
+
+#sidebar-menu {
+  cursor: pointer;
+  display: block;
+}
+
+#sidebar .menu {
+  width: var(--sidebar-width);
+  overflow: hidden;
+  display: none;
+}
+
+#sidebar .menu.active {
+  display: block;
+}
+
+#sidebar .menu .header span {
+  color: #818896;
+  padding: 2px 12px;
+  display: block;
+  margin-top: 20px;
+}
+
+#sidebar .item {
+  text-align: left !important;
+  overflow: hidden;
+}
+
+#sidebar .sidebar-text,
+#sidebar .sidebar-content .btn {
+  display: block;
+  color: #f8f9fa;
+  position: relative;
+  border-radius: 0;
+  text-decoration: none;
+  /*  font-weight: 200;*/
+  transition: 0.3s;
+  text-align: left;
+  border: none;
+}
+
+#sidebar .sidebar-text:hover,
+#sidebar .sidebar-content .btn:hover {
+  background: #525555;
+}
+
+#sidebar .sidebar-content .btn sup {
+  color: red;
+  font-weight: 700;
+}
+
+#sidebar .sidebar-text img {
+  width: 16px;
+  object-fit: contain;
+}
+
+#sidebar .item.active {
+  display: block;
+  color: #fff;
+  position: relative;
+  border-radius: 0;
+  text-decoration: none;
+  transition: 0.3s;
+  text-align: left;
+}
+
+#sidebar .item.active a:before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background: #2199CA;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+#sidebar::-webkit-scrollbar {
+  width: 3px;
+  background: transparent;
+}
+
+#sidebar::-webkit-scrollbar-track {
+  background: transparent;
+  border: none;
+}
+
+#sidebar::-webkit-scrollbar-thumb {
+  background: #323639;
+  border-radius: 50px;
+  border: none;
+}
+
+#sidebar::-webkit-scrollbar-thumb:hover,
+#sidebar::-webkit-scrollbar-thumb:active,
+#sidebar::-webkit-scrollbar-thumb:disabled {
+  background: #444749;
+}
+
+#sidebar .btn .badge {
+  top: 2px;
+}

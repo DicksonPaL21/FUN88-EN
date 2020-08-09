@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+  <!--  <meta name="theme-color" content="" />-->
+
+  <link rel="icon" type="image/png" href="../img/icon/logo.png" />
+
+  <title>FUN88 Sportsbook &amp; Casino</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- fontawesome Icon-->
+  <script src="https://kit.fontawesome.com/a8c2f6ec30.js"></script>
+  <!-- JQuery 3.4.1 -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+  <!--  <script src="https://kit.fontawesome.com/df3fec80dc.js"></script>-->
+  <script type="text/javascript" src="../js/config.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content y-scroll sb-0">
+      <header>
+        <script src="../js/component/header.js"></script>
+        <script src="../js/component/sidenav.js"></script>
+      </header>
+
+      <section>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb" style="border-radius: 0px; margin-bottom: 0">
+            <li class="breadcrumb-item f-1"><a href="#">Home</a></li>
+            <li class="breadcrumb-item f-1">Casino</li>
+            <li class="breadcrumb-item f-1 active" aria-current="page">Live Casino</li>
+          </ol>
+        </nav>
+        <div class="container">
+          <div class="row">
+            <div class="search-con">
+              <div class="search-bar">
+                <i class="fas fa-search" style="margin-top:13px;"></i>
+              </div>
+            </div>
+            <div class="game-con col-12">
+              <div class="row p-3">
+                <div class="col-6">
+                  <div class="title-game">
+                    <h2 class="f-1">Popular Slots (12)</h2>
+                  </div>
+                </div>
+                <div class="col-6 pr-0">
+                  <div class="show-game float-right">
+                    <button type="button" class="show-all btn btn-success f-2" onclick="ani()">Show All Games</button>
+                  </div>
+                </div>
+              </div>
+              <div id="carouselExampleControls" class="carousel slide" data-interval="false" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="container-fluid p-0">
+                      <div class="row no-gutters w-100">
+                        <div class="col-8">
+                          <img src="../img/casino/slot1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-4 p-0">
+                          <div class="col-12 p-0">
+                            <img src="../img/casino/slot2.png" alt="" class="img-fluid">
+                          </div>
+                          <div class="col-12 p-0">
+                            <img src="../img/casino/slot3.png" alt="" class="img-fluid">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="container-fluid p-0">
+                      <div class="row no-gutters w-100">
+                        <div class="col-4">
+                          <img src="../img/casino/slot4.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-4">
+                          <img src="../img/casino/slot5.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-4">
+                          <img src="../img/casino/slot6.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-4">
+                          <img src="../img/casino/slot7.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-4">
+                          <img src="../img/casino/slot8.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-4">
+                          <img src="../img/casino/slot9.png" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="container-fluid p-0">
+                      <div class="row no-gutters w-100">
+                        <div class="col-4">
+                          <img src="../img/casino/slot4.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-4">
+                          <img src="../img/casino/slot5.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-4">
+                          <img src="../img/casino/slot6.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-4">
+                          <img src="../img/casino/blank.png" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev games" id="prev-btn" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <i class="control-carousels fas fa-chevron-left"></i>
+                </a>
+                <a class="carousel-control-next" id="next-btn" href="#carouselExampleControls" role="button" data-slide="next">
+                  <i class="control-carousels fas fa-chevron-right"></i>
+                </a>
+                <div class="mystyle" id="Addclass">
+                  <span class="overlay-page" id="overlay-page">1 of 3</span>
+                </div>
+              </div>
+              <div class="container-ani" id="btn-fade">
+                <div class="row no-gutters">
+                  <div class="col-4">
+                    <img src="../img/casino/slot2.png" alt="" class="img-fluid show-animate">
+                  </div>
+                  <div class="col-4">
+                    <img src="../img/casino/slot2.png" alt="" class="img-fluid show-animate1">
+                  </div>
+                  <div class="col-4">
+                    <img src="../img/casino/slot2.png" alt="" class="img-fluid show-animate2">
+                  </div>
+                  <div class="col-4">
+                    <img src="../img/casino/slot2.png" alt="" class="img-fluid show-animate3">
+                  </div>
+                  <div class="col-4">
+                    <img src="../img/casino/slot2.png" alt="" class="img-fluid show-animate4">
+                  </div>
+                  <div class="col-4">
+                    <img src="../img/casino/slot2.png" alt="" class="img-fluid show-animate5">
+                  </div>
+                  <div class="po">
+                    <a class="link-more show-animate5 f-3" onclick="moreGame()" id="show-more">show more</a>
+                  </div>
+                  <div class="game-edi" id="game-edi">
+                    <div class="row no-gutters">
+                      <div class="col-4">
+                        <img src="../img/casino/slot2.png" alt="" class="img-fluid">
+                      </div>
+                      <div class="col-4">
+                        <img src="../img/casino/slot2.png" alt="" class="img-fluid">
+                      </div>
+                      <div class="col-4">
+                        <img src="../img/casino/slot2.png" alt="" class="img-fluid">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="text-dark text-center text-uppercase title mt-4">
+                Live Casino Action at Fun88 UK
+              </p>
+              <p class="text-justify f-1">While online casinos are rich in choice, flexibility and convenience, there is often a sense of interactivity and personalisation that is missing.
+                Luckily, Fun88’s high-quality Live Casino offering brings the thrills and spills of a brick-and-mortar casino straight to your desktop or mobile device. You can be served from a live dealer, play alongside other players and watch real-life events unfold in real-time!
+              </p>
+              <p class="text-justify f-1">Benefit from the action, excitement and adrenaline of the live casino. Let the ball, cards or chips fall where they may, build on your winning streak and enjoy all the class and showmanship that you’d expect from an
+                <a href="/casino/">industry-leading casino</a>.
+              </p>
+              <p class="text-justify f-1">Brought to you by Evolution Gaming, our Live Roulette, Blackjack and Baccarat offerings allow live dealers to stream in to provide a highly personalised and interactive gambling experience. Furthermore, by taking part in the action live, you can be rest assured that gaming is fair, accurate, transparent and randomised.</p>
+              <h2 class="font-weight-bold text-primary f-1">Live Roulette</h2>
+              <p class="text-justify f-1">Roulette is one of the most popular and thrilling of all casino games as it involves the tangibility of a real-life ‘wheel’. It is also the basis for many strategies (such as the Martingale system) and learning through observation. With Live Roulette, you can capitalise on this by watching the action in real-time according to inclinations, trends and patterns.</p>
+              <h2 class="font-weight-bold text-primary f-1">Live Blackjack</h2>
+              <p class="text-justify f-1">With Live Blackjack, we’re upping the ante on the online action. Play against the dealer or other players to see who can get closest to 21 points. Besides replicating the ritual and thrill of a real-life event, playing against other ‘humans’ offers the potential to read emotions and mannerisms in an attempt to win the game.</p>
+              <h2 class="font-weight-bold text-primary f-1">Live Baccarat</h2>
+              <p class="text-justify f-1">Baccarat is another casino game that is enhanced through real-life interactions. Players can bet on pairs, on the other player, the banker or that the game will end in a tie, to see who can get closest to 9 points. The variety of gaming options and contact with other players means that real-time events are the best way to replicate the randomness, thrill and the potential strategies involved.</p>
+              <p class="text-justify f-1">Interactive entertainment awaits with Fun88’s Live Casino action!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="control">
+      <script src="../js/component/user-control.js"></script>
+    </div>
+  </div>
+
+  <script src="../js/functions.js"></script>
+  <!--  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>-->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript">
+    function ani() {
+
+      var x = document.getElementById("btn-fade");
+      var i = document.getElementById("show-more");
+      var y = document.getElementById("game-edi");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+
+      } else {
+        x.style.display = "none";
+        i.style.display = "block";
+        y.style.display = "none";
+      }
+    }
+
+    function moreGame() {
+      var y = document.getElementById("game-edi");
+      y.style.display = "block";
+      var i = document.getElementById("show-more");
+      i.style.display = "none";
+    }
+
+    var next = document.getElementById("next-btn");
+    var count = 0;
+    var prev = document.getElementById("prev-btn");
+    var overlayPage = document.getElementById("overlay-page");
+    prev.style.visibility = "hidden";
+    var myVar;
+
+    next.onclick = function() {
+      count += 1;
+      if (count == 1) {
+        overlayPage.innerHTML = "2 of 3";
+        prev.style.visibility = "visible";
+        overlayPage.style.opacity = "1";
+        myVar = setTimeout(overlay, 1300);
+
+      }
+      if (count == 2) {
+        overlayPage.innerHTML = "3 of 3";
+        next.style.visibility = "hidden";
+        prev.style.visibility = "visible";
+        overlayPage.style.opacity = "1";
+        myVar = setTimeout(overlay, 1300);
+        count = 0;
+      }
+    };
+    prev.onclick = function() {
+      count += 1;
+      if (count == 1) {
+        overlayPage.innerHTML = "2 of 3";
+        next.style.visibility = "visible";
+        overlayPage.style.opacity = "1";
+        myVar = setTimeout(overlay, 1300);
+      }
+      if (count == 2) {
+        overlayPage.innerHTML = "1 of 3";
+        overlayPage.style.opacity = "1";
+        next.style.visibility = "visible";
+        prev.style.visibility = "hidden";
+        myVar = setTimeout(overlay, 1300);
+
+        count = 0;
+      }
+    };
+
+    function overlay() {
+      overlayPage.style.opacity = "0";
+    }
+    var nextClass = document.getElementsByClassName('next-button');
+    nextClass.onclick = function() {
+      count += 1;
+    };
+  </script>
+  <script type="text/javascript">
+    function ani() {
+
+      var x = document.getElementById("btn-fade");
+      var i = document.getElementById("show-more");
+      var y = document.getElementById("game-edi");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+
+      } else {
+        x.style.display = "none";
+        i.style.display = "block";
+        y.style.display = "none";
+      }
+    }
+
+    function moreGame() {
+      var y = document.getElementById("game-edi");
+      y.style.display = "block";
+      var i = document.getElementById("show-more");
+      i.style.display = "none";
+    }
+
+    var next = document.getElementById("next-btn");
+    var count = 0;
+    var prev = document.getElementById("prev-btn");
+    var overlayPage = document.getElementById("overlay-page");
+    prev.style.visibility = "hidden";
+    var myVar;
+
+    next.onclick = function() {
+      count += 1;
+      if (count == 1) {
+        overlayPage.innerHTML = "2 of 3";
+        prev.style.visibility = "visible";
+        overlayPage.style.opacity = "1";
+        myVar = setTimeout(overlay, 1300);
+
+      }
+      if (count == 2) {
+        overlayPage.innerHTML = "3 of 3";
+        next.style.visibility = "hidden";
+        prev.style.visibility = "visible";
+        overlayPage.style.opacity = "1";
+        myVar = setTimeout(overlay, 1300);
+        count = 0;
+      }
+    };
+    prev.onclick = function() {
+      count += 1;
+      if (count == 1) {
+        overlayPage.innerHTML = "2 of 3";
+        next.style.visibility = "visible";
+        overlayPage.style.opacity = "1";
+        myVar = setTimeout(overlay, 1300);
+      }
+      if (count == 2) {
+        overlayPage.innerHTML = "1 of 3";
+        overlayPage.style.opacity = "1";
+        next.style.visibility = "visible";
+        prev.style.visibility = "hidden";
+        myVar = setTimeout(overlay, 1300);
+
+        count = 0;
+      }
+    };
+
+    function overlay() {
+      overlayPage.style.opacity = "0";
+    }
+    var nextClass = document.getElementsByClassName('next-button');
+    nextClass.onclick = function() {
+      count += 1;
+    };
+  </script>
+</body>
+
+</html>
